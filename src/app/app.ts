@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './components/navbar/navbar'; // <--- Import Navbar
+import { NavbarComponent } from './components/navbar/navbar';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent], // <--- Add to imports
+  imports: [RouterOutlet, NavbarComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
+// RENAMED 'App' TO 'AppComponent' BELOW:
+export class AppComponent {
   title = 'hotel-booking-system';
 }
