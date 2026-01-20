@@ -7,7 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar';
   standalone: true,
   imports: [RouterOutlet, NavbarComponent],
   templateUrl: './app.html',
-  styleUrl: './styles.css'
+  styleUrl: './app.css'
 })
 export class AppComponent {
   title = 'hotel-booking-system';
