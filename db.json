@@ -1,0 +1,50 @@
+{
+  "hotels": [
+    {
+      "id": 1,
+      "name": "Grand Angular Hotel",
+      "location": "New York, USA",
+      "pricePerNight": 250,
+      "rating": 5,
+      "description": "Luxury stay in the heart of the city.",
+      "thumbnail": "https://placehold.co/600x400/indigo/white?text=Grand+Hotel",
+      "images": [],
+      "amenities": ["WiFi", "Pool", "Spa", "Gym"]
+    },
+    {
+      "id": 2,
+      "name": "TypeScript Resort",
+      "location": "Bali, Indonesia",
+      "pricePerNight": 120,
+      "rating": 4,
+      "description": "A peaceful getaway for developers.",
+      "thumbnail": "https://placehold.co/600x400/orange/white?text=TS+Resort",
+      "images": [],
+      "amenities": ["Beach Access", "Free Breakfast", "WiFi"]
+    }
+  ],
+  "rooms": [
+    {
+      "id": 101,
+      "hotelId": 1,
+      "roomNumber": "A-101",
+      "type": "Deluxe",
+      "price": 250,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": ["King Bed", "City View"]
+    },
+    {
+      "id": 102,
+      "hotelId": 2,
+      "roomNumber": "B-205",
+      "type": "Standard",
+      "price": 120,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": ["Queen Bed", "Garden View"]
+    }
+  ],
+  "bookings": [],
+  "users": []
+}
