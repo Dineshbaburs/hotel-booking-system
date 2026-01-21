@@ -1,89 +1,111 @@
 {
   "hotels": [
     {
-      "id": "1",
-      "name": "Grand Angular Hotel",
-      "location": "New York, USA",
-      "pricePerNight": 250,
-      "rating": 5,
-      "description": "Luxury stay in the heart of the city.",
-      "thumbnail": "https://placehold.co/600x400/indigo/white?text=Grand+Hotel",
+      "id": 1,
+      "name": "Royal Bengaluru Hotel",
+      "location": "Bengaluru, India",
+      "pricePerNight": 4500,
+      "rating": 4.5,
+      "description": "A luxury business hotel in the tech hub of India, featuring modern amenities.",
+      "thumbnail": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "images": [],
-      "amenities": [
-        "WiFi",
-        "Pool",
-        "Spa",
-        "Gym"
-      ]
+      "amenities": ["WiFi", "Pool", "Conference Hall", "Gym"]
     },
     {
-      "id": "2",
-      "name": "TypeScript Resort",
-      "location": "Bali, Indonesia",
-      "pricePerNight": 120,
-      "rating": 4,
-      "description": "A peaceful getaway for developers.",
-      "thumbnail": "https://placehold.co/600x400/orange/white?text=TS+Resort",
+      "id": 2,
+      "name": "Goa Beach Paradise",
+      "location": "Goa, India",
+      "pricePerNight": 8500,
+      "rating": 5,
+      "description": "Relax right on the beach with sunset views, seafood dining, and private cottages.",
+      "thumbnail": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "images": [],
-      "amenities": [
-        "Beach Access",
-        "Free Breakfast",
-        "WiFi"
-      ]
+      "amenities": ["Beach Access", "Bar", "Spa", "Free Breakfast"]
+    },
+    {
+      "id": 3,
+      "name": "Mumbai Grand Palace",
+      "location": "Mumbai, India",
+      "pricePerNight": 12000,
+      "rating": 5,
+      "description": "Experience heritage luxury overlooking the Gateway of India.",
+      "thumbnail": "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "images": [],
+      "amenities": ["Sea View", "5-Star Dining", "Butler Service", "Pool"]
+    },
+    {
+      "id": 4,
+      "name": "Delhi Heritage Stay",
+      "location": "Delhi, India",
+      "pricePerNight": 3500,
+      "rating": 4,
+      "description": "A charming boutique hotel near historic monuments and markets.",
+      "thumbnail": "https://images.unsplash.com/photo-1587985064135-0366536eab42?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "images": [],
+      "amenities": ["Rooftop Cafe", "WiFi", "Tour Guide", "Metro Access"]
     }
   ],
   "rooms": [
     {
-      "id": "1",
+      "id": 101,
       "hotelId": 1,
-      "roomNumber": "101",
+      "roomNumber": "B-101",
       "type": "Deluxe",
-      "price": 250,
+      "price": 4500,
       "isAvailable": true,
       "maxGuests": 2,
-      "features": [
-        "King Bed",
-        "Ocean View",
-        "Mini Bar"
-      ]
+      "features": ["King Bed", "City View", "Work Desk"]
     },
     {
-      "id": "2",
+      "id": 102,
       "hotelId": 1,
-      "roomNumber": "102",
+      "roomNumber": "B-205",
       "type": "Suite",
-      "price": 450,
-      "isAvailable": false,
-      "maxGuests": 4,
-      "features": [
-        "2 Queen Beds",
-        "Balcony",
-        "Jacuzzi"
-      ]
+      "price": 7500,
+      "isAvailable": true,
+      "maxGuests": 3,
+      "features": ["Separate Living Area", "Bathtub", "Free Minibar"]
     },
     {
-      "id": "3",
+      "id": 201,
       "hotelId": 2,
-      "roomNumber": "201",
+      "roomNumber": "G-01",
+      "type": "Beach Villa",
+      "price": 15000,
+      "isAvailable": true,
+      "maxGuests": 4,
+      "features": ["Private Pool", "Sea Facing", "Patio"]
+    },
+    {
+      "id": 202,
+      "hotelId": 2,
+      "roomNumber": "G-12",
       "type": "Standard",
-      "price": 120,
+      "price": 8500,
+      "isAvailable": false,
+      "maxGuests": 2,
+      "features": ["Queen Bed", "Garden View", "Balcony"]
+    },
+    {
+      "id": 301,
+      "hotelId": 3,
+      "roomNumber": "M-500",
+      "type": "Royal Suite",
+      "price": 25000,
       "isAvailable": true,
       "maxGuests": 2,
-      "features": [
-        "Queen Bed",
-        "Free WiFi"
-      ]
+      "features": ["Ocean View", "Jacuzzi", "Butler Service"]
     }
   ],
   "bookings": [
     {
       "id": "7b67",
-      "roomId": 1,
+      "roomId": 101,
       "guestName": "Dinesh",
       "email": "dinesh@gmail.com",
       "checkInDate": "2026-12-28",
       "checkOutDate": "2026-01-01",
-      "totalPrice": 0,
+      "totalPrice": 18000,
       "status": "confirmed"
     }
   ],
