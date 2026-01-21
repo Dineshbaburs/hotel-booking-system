@@ -1,3 +1,4 @@
+import 'zone.js';  // <--- THIS IS THE CRITICAL FIX
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app';

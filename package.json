@@ -1,7 +1,7 @@
 {
   "name": "hotel-booking-system",
   "version": "0.0.0",
- "scripts": {
+  "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -9,7 +9,6 @@
     "test": "ng test",
     "mock:api": "json-server --watch db.json --port 3000"
   },
-  
   "prettier": {
     "printWidth": 100,
     "singleQuote": true,
@@ -34,7 +33,8 @@
     "@angular/platform-browser": "^21.1.0",
     "@angular/router": "^21.1.0",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "zone.js": "^0.16.0"
   },
   "devDependencies": {
     "@angular/build": "^21.1.0",
