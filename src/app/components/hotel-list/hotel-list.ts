@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router'; // <--- 1. Import this
+import { RouterModule, ActivatedRoute } from '@angular/router'; // <--- Import ActivatedRoute
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -11,10 +11,10 @@ import { Hotel } from '../../models/hotel.model';
   selector: 'app-hotel-list',
   standalone: true,
   imports: [
-    CommonModule,
-    RouterModule, // <--- 2. Add this to the imports array
-    MatCardModule,
-    MatButtonModule,
+    CommonModule, 
+    RouterModule, 
+    MatCardModule, 
+    MatButtonModule, 
     MatIconModule
   ],
   templateUrl: './hotel-list.html',
@@ -23,11 +23,20 @@ import { Hotel } from '../../models/hotel.model';
 export class HotelListComponent implements OnInit {
   hotels: Hotel[] = [];
 
-  constructor(private hotelService: HotelService) {}
+  constructor(
+    private hotelService: HotelService,
+    private route: ActivatedRoute // <--- Inject Route
+  ) {}
 
   ngOnInit(): void {
-    this.hotelService.getHotels().subscribe(data => {
-      this.hotels = data;
+    // Check for query params (e.g. ?location=New York)
+    this.route.queryParams.subscribe(params => {
+      const location = params['location'];
+      
+      // Fetch hotels (filtered or all)
+      this.hotelService.getHotels(location).subscribe(data => {
+        this.hotels = data;
+      });
     });
   }
 }
