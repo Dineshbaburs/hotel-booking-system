@@ -25,14 +25,13 @@ import { FormsModule } from '@angular/forms';
 export class HomeComponent {
   selectedLocation: string = '';
   
-  // Hardcoded locations for now (based on your DB)
-  locations: string[] = ['New York', 'Bali', 'Paris', 'London', 'Dubai'];
+  // UPDATED: Strict list of Indian Cities
+  locations: string[] = ['Bengaluru', 'Mumbai', 'Delhi', 'Goa', 'Chennai', 'Salem'];
 
   constructor(private router: Router) {}
 
   onSearch() {
     if (this.selectedLocation) {
-      // Navigate to /hotels?location=New York
       this.router.navigate(['/hotels'], { queryParams: { location: this.selectedLocation } });
     }
   }
