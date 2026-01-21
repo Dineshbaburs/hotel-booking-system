@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router'; // <--- CRITICAL IMPORT
+import { RouterModule } from '@angular/router'; // <--- 1. Import this
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -11,10 +11,10 @@ import { Hotel } from '../../models/hotel.model';
   selector: 'app-hotel-list',
   standalone: true,
   imports: [
-    CommonModule, 
-    RouterModule, // <--- THIS MAKES THE BUTTON WORK
-    MatCardModule, 
-    MatButtonModule, 
+    CommonModule,
+    RouterModule, // <--- 2. Add this to the imports array
+    MatCardModule,
+    MatButtonModule,
     MatIconModule
   ],
   templateUrl: './hotel-list.html',
