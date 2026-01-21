@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { MatChipsModule } from '@angular/material/chips'; // For amenities
+import { MatChipsModule } from '@angular/material/chips';
 import { HotelService } from '../../services/hotel.service';
 import { Hotel } from '../../models/hotel.model';
 import { Room } from '../../models/room.model';
@@ -28,14 +28,16 @@ export class HotelDetailComponent implements OnInit {
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     
-    // 1. Get Hotel Details
-    this.hotelService.getHotelById(id).subscribe(data => {
-      this.hotel = data;
-    });
+    if (id) {
+      // 1. Get Hotel Details
+      this.hotelService.getHotelById(id).subscribe((data: Hotel) => {
+        this.hotel = data;
+      });
 
-    // 2. Get Available Rooms
-    this.hotelService.getRoomsByHotelId(id).subscribe(data => {
-      this.rooms = data;
-    });
+      // 2. Get Available Rooms
+      this.hotelService.getRoomsByHotelId(id).subscribe((data: Room[]) => {
+        this.rooms = data;
+      });
+    }
   }
 }
