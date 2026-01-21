@@ -1,0 +1,55 @@
+.list-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 24px;
+  color: #3f51b5; /* Primary Color */
+}
+
+/* Grid Layout */
+.hotel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* Card Styling */
+.hotel-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.description {
+  margin-top: 12px;
+  color: #666;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #2e7d32; /* Green for money */
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  color: #ffb300; /* Gold star */
+}

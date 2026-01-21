@@ -7,15 +7,11 @@ import { Hotel } from '../models/hotel.model';
   providedIn: 'root'
 })
 export class HotelService {
-  private apiUrl = 'http://localhost:3000/hotels'; // URL to your JSON Server
+  private apiUrl = 'http://localhost:3000/hotels'; // Matches your json-server
 
   constructor(private http: HttpClient) {}
 
   getHotels(): Observable<Hotel[]> {
     return this.http.get<Hotel[]>(this.apiUrl);
-  }
-
-  getHotelById(id: number): Observable<Hotel> {
-    return this.http.get<Hotel>(`${this.apiUrl}/${id}`);
   }
 }
