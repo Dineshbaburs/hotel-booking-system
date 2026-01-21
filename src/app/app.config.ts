@@ -8,7 +8,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
-    provideHttpClient(),      // <--- Critical for data
-    provideAnimationsAsync()  // <--- Critical for UI
+    provideHttpClient(),      // Required for HotelService
+    provideAnimationsAsync()  // Required for Angular Material
   ]
 };

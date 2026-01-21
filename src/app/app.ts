@@ -5,11 +5,10 @@ import { NavbarComponent } from './components/navbar/navbar';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent],
+  imports: [RouterOutlet, NavbarComponent], 
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-// RENAMED 'App' TO 'AppComponent' BELOW:
 export class AppComponent {
   title = 'hotel-booking-system';
 }
