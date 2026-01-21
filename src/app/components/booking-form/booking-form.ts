@@ -14,7 +14,7 @@ import { Booking } from '../../models/booking.model';
   standalone: true,
   imports: [
     CommonModule,
-    ReactiveFormsModule, // <--- Required for Forms
+    ReactiveFormsModule,
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
@@ -33,7 +33,6 @@ export class BookingFormComponent implements OnInit {
     private hotelService: HotelService,
     private router: Router
   ) {
-    // Initialize Form
     this.bookingForm = this.fb.group({
       guestName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -43,27 +42,25 @@ export class BookingFormComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // 1. Get Room ID from URL
     this.roomId = Number(this.route.snapshot.paramMap.get('roomId'));
   }
 
   onSubmit(): void {
     if (this.bookingForm.valid) {
-      // 2. Prepare Booking Data
       const bookingData: Booking = {
         roomId: this.roomId,
         guestName: this.bookingForm.value.guestName,
         email: this.bookingForm.value.email,
         checkInDate: this.bookingForm.value.checkInDate,
         checkOutDate: this.bookingForm.value.checkOutDate,
-        totalPrice: 0, // We will calculate this later
+        totalPrice: 0, 
         status: 'confirmed'
       };
 
-      // 3. Send to Server
-      this.hotelService.createBooking(bookingData).subscribe(() => {
-        alert('Booking Confirmed!');
-        this.router.navigate(['/hotels']); // Go back to home
+      // UPDATED LOGIC:
+      this.hotelService.createBooking(bookingData).subscribe((newBooking) => {
+        // Navigate to the NEW Confirmation Page using the new ID
+        this.router.navigate(['/confirmation', newBooking.id]); 
       });
     }
   }

@@ -1,7 +1,7 @@
 {
   "hotels": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Royal Bengaluru Hotel",
       "location": "Bengaluru, India",
       "pricePerNight": 4500,
@@ -9,32 +9,43 @@
       "description": "Luxury business hotel in Indiranagar.",
       "thumbnail": "https://placehold.co/600x400/indigo/white?text=Royal+Bengaluru",
       "images": [],
-      "amenities": ["WiFi", "Pool", "Gym"]
+      "amenities": [
+        "WiFi",
+        "Pool",
+        "Gym"
+      ]
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Tech City Stay",
       "location": "Bengaluru, India",
       "pricePerNight": 2500,
-      "rating": 4.0,
+      "rating": 4,
       "description": "Affordable stay near Electronic City.",
       "thumbnail": "https://placehold.co/600x400/blue/white?text=Tech+City",
       "images": [],
-      "amenities": ["WiFi", "Breakfast"]
+      "amenities": [
+        "WiFi",
+        "Breakfast"
+      ]
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "The Grand MG Road",
       "location": "Bengaluru, India",
       "pricePerNight": 6000,
-      "rating": 5.0,
+      "rating": 5,
       "description": "Premium hotel in the heart of the city.",
       "thumbnail": "https://placehold.co/600x400/gold/white?text=Grand+MG",
       "images": [],
-      "amenities": ["Spa", "Bar", "Pool"]
+      "amenities": [
+        "Spa",
+        "Bar",
+        "Pool"
+      ]
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Green Garden Resort",
       "location": "Bengaluru, India",
       "pricePerNight": 3500,
@@ -42,10 +53,14 @@
       "description": "Peaceful resort on the outskirts.",
       "thumbnail": "https://placehold.co/600x400/green/white?text=Garden+Resort",
       "images": [],
-      "amenities": ["Garden", "Parking", "WiFi"]
+      "amenities": [
+        "Garden",
+        "Parking",
+        "WiFi"
+      ]
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Whitefield Corporate Suites",
       "location": "Bengaluru, India",
       "pricePerNight": 4200,
@@ -53,21 +68,29 @@
       "description": "Perfect for business travelers.",
       "thumbnail": "https://placehold.co/600x400/grey/white?text=Whitefield+Suites",
       "images": [],
-      "amenities": ["Conference Hall", "Gym", "WiFi"]
+      "amenities": [
+        "Conference Hall",
+        "Gym",
+        "WiFi"
+      ]
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Mumbai Sea View",
       "location": "Mumbai, India",
       "pricePerNight": 8500,
-      "rating": 5.0,
+      "rating": 5,
       "description": "Iconic hotel overlooking the Gateway.",
       "thumbnail": "https://placehold.co/600x400/orange/white?text=Sea+View",
       "images": [],
-      "amenities": ["Sea View", "Pool", "Spa"]
+      "amenities": [
+        "Sea View",
+        "Pool",
+        "Spa"
+      ]
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Juhu Beach Resort",
       "location": "Mumbai, India",
       "pricePerNight": 6500,
@@ -75,10 +98,14 @@
       "description": "Stay right on Juhu Beach.",
       "thumbnail": "https://placehold.co/600x400/yellow/white?text=Juhu+Resort",
       "images": [],
-      "amenities": ["Beach Access", "Bar", "WiFi"]
+      "amenities": [
+        "Beach Access",
+        "Bar",
+        "WiFi"
+      ]
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Bandra Luxury Stay",
       "location": "Mumbai, India",
       "pricePerNight": 5000,
@@ -86,21 +113,28 @@
       "description": "Trendy hotel in the suburbs.",
       "thumbnail": "https://placehold.co/600x400/pink/white?text=Bandra+Stay",
       "images": [],
-      "amenities": ["Cafe", "WiFi", "Gym"]
+      "amenities": [
+        "Cafe",
+        "WiFi",
+        "Gym"
+      ]
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Andheri Business Inn",
       "location": "Mumbai, India",
       "pricePerNight": 3200,
-      "rating": 4.0,
+      "rating": 4,
       "description": "Close to the airport and offices.",
       "thumbnail": "https://placehold.co/600x400/purple/white?text=Business+Inn",
       "images": [],
-      "amenities": ["Airport Shuttle", "Breakfast"]
+      "amenities": [
+        "Airport Shuttle",
+        "Breakfast"
+      ]
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Colaba Heritage Hotel",
       "location": "Mumbai, India",
       "pricePerNight": 4800,
@@ -108,10 +142,13 @@
       "description": "Historical charm in South Mumbai.",
       "thumbnail": "https://placehold.co/600x400/brown/white?text=Heritage+Hotel",
       "images": [],
-      "amenities": ["Heritage Tour", "Restaurant"]
+      "amenities": [
+        "Heritage Tour",
+        "Restaurant"
+      ]
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Delhi Capital Palace",
       "location": "Delhi, India",
       "pricePerNight": 4000,
@@ -119,10 +156,14 @@
       "description": "Stay near Connaught Place.",
       "thumbnail": "https://placehold.co/600x400/red/white?text=Capital+Palace",
       "images": [],
-      "amenities": ["Metro Access", "WiFi", "Bar"]
+      "amenities": [
+        "Metro Access",
+        "WiFi",
+        "Bar"
+      ]
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "South Delhi Boutique",
       "location": "Delhi, India",
       "pricePerNight": 3500,
@@ -130,10 +171,13 @@
       "description": "Stylish stay in Hauz Khas.",
       "thumbnail": "https://placehold.co/600x400/teal/white?text=Boutique+Stay",
       "images": [],
-      "amenities": ["Rooftop Cafe", "WiFi"]
+      "amenities": [
+        "Rooftop Cafe",
+        "WiFi"
+      ]
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Karol Bagh Inn",
       "location": "Delhi, India",
       "pricePerNight": 2000,
@@ -141,10 +185,13 @@
       "description": "Budget friendly shopping hub.",
       "thumbnail": "https://placehold.co/600x400/cyan/white?text=Karol+Bagh",
       "images": [],
-      "amenities": ["Market Access", "Breakfast"]
+      "amenities": [
+        "Market Access",
+        "Breakfast"
+      ]
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Aerocity Transit Hotel",
       "location": "Delhi, India",
       "pricePerNight": 5500,
@@ -152,10 +199,14 @@
       "description": "Luxury transit near IGI Airport.",
       "thumbnail": "https://placehold.co/600x400/black/white?text=Aerocity",
       "images": [],
-      "amenities": ["Pool", "24h Cafe", "Gym"]
+      "amenities": [
+        "Pool",
+        "24h Cafe",
+        "Gym"
+      ]
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Old Delhi Haveli",
       "location": "Delhi, India",
       "pricePerNight": 3000,
@@ -163,10 +214,13 @@
       "description": "Experience culture in Chandni Chowk.",
       "thumbnail": "https://placehold.co/600x400/orange/white?text=Haveli",
       "images": [],
-      "amenities": ["Cultural Walk", "Food Tour"]
+      "amenities": [
+        "Cultural Walk",
+        "Food Tour"
+      ]
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Goa Beach Paradise",
       "location": "Goa, India",
       "pricePerNight": 5000,
@@ -174,10 +228,14 @@
       "description": "Beachfront cottages in Calangute.",
       "thumbnail": "https://placehold.co/600x400/blue/white?text=Goa+Paradise",
       "images": [],
-      "amenities": ["Beach Access", "Bar", "Pool"]
+      "amenities": [
+        "Beach Access",
+        "Bar",
+        "Pool"
+      ]
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Panjim City Hotel",
       "location": "Goa, India",
       "pricePerNight": 3000,
@@ -185,10 +243,13 @@
       "description": "Central stay near casinos.",
       "thumbnail": "https://placehold.co/600x400/yellow/white?text=Panjim+City",
       "images": [],
-      "amenities": ["Casino Access", "WiFi"]
+      "amenities": [
+        "Casino Access",
+        "WiFi"
+      ]
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "South Goa Retreat",
       "location": "Goa, India",
       "pricePerNight": 6000,
@@ -196,10 +257,14 @@
       "description": "Quiet luxury in Palolem.",
       "thumbnail": "https://placehold.co/600x400/green/white?text=South+Retreat",
       "images": [],
-      "amenities": ["Private Beach", "Spa", "Yoga"]
+      "amenities": [
+        "Private Beach",
+        "Spa",
+        "Yoga"
+      ]
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Anjuna Party Hostel",
       "location": "Goa, India",
       "pricePerNight": 1500,
@@ -207,43 +272,57 @@
       "description": "Best for backpackers and parties.",
       "thumbnail": "https://placehold.co/600x400/purple/white?text=Party+Hostel",
       "images": [],
-      "amenities": ["Bar", "Events", "WiFi"]
+      "amenities": [
+        "Bar",
+        "Events",
+        "WiFi"
+      ]
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Vagator Cliff Resort",
       "location": "Goa, India",
       "pricePerNight": 7500,
-      "rating": 5.0,
+      "rating": 5,
       "description": "Stunning cliff views.",
       "thumbnail": "https://placehold.co/600x400/red/white?text=Cliff+Resort",
       "images": [],
-      "amenities": ["Infinity Pool", "Restaurant"]
+      "amenities": [
+        "Infinity Pool",
+        "Restaurant"
+      ]
     },
     {
-      "id": 21,
+      "id": "21",
       "name": "Chennai Grand Chola",
       "location": "Chennai, India",
       "pricePerNight": 9000,
-      "rating": 5.0,
+      "rating": 5,
       "description": "Palatial luxury in Guindy.",
       "thumbnail": "https://placehold.co/600x400/gold/white?text=Grand+Chola",
       "images": [],
-      "amenities": ["Luxury Spa", "Pool", "Banquet"]
+      "amenities": [
+        "Luxury Spa",
+        "Pool",
+        "Banquet"
+      ]
     },
     {
-      "id": 22,
+      "id": "22",
       "name": "Marina Beach Stay",
       "location": "Chennai, India",
       "pricePerNight": 2500,
-      "rating": 4.0,
+      "rating": 4,
       "description": "Close to the famous Marina Beach.",
       "thumbnail": "https://placehold.co/600x400/blue/white?text=Marina+Stay",
       "images": [],
-      "amenities": ["Sea Breeze", "WiFi"]
+      "amenities": [
+        "Sea Breeze",
+        "WiFi"
+      ]
     },
     {
-      "id": 23,
+      "id": "23",
       "name": "T-Nagar Residency",
       "location": "Chennai, India",
       "pricePerNight": 3000,
@@ -251,10 +330,13 @@
       "description": "Shopping hub of Chennai.",
       "thumbnail": "https://placehold.co/600x400/pink/white?text=T-Nagar",
       "images": [],
-      "amenities": ["Shopping", "Restaurant"]
+      "amenities": [
+        "Shopping",
+        "Restaurant"
+      ]
     },
     {
-      "id": 24,
+      "id": "24",
       "name": "ECR Beach Resort",
       "location": "Chennai, India",
       "pricePerNight": 5500,
@@ -262,10 +344,13 @@
       "description": "Weekend getaway on East Coast Road.",
       "thumbnail": "https://placehold.co/600x400/green/white?text=ECR+Resort",
       "images": [],
-      "amenities": ["Private Beach", "Pool"]
+      "amenities": [
+        "Private Beach",
+        "Pool"
+      ]
     },
     {
-      "id": 25,
+      "id": "25",
       "name": "OMR IT Park Hotel",
       "location": "Chennai, India",
       "pricePerNight": 3800,
@@ -273,10 +358,13 @@
       "description": "Convenient for IT professionals.",
       "thumbnail": "https://placehold.co/600x400/grey/white?text=OMR+Hotel",
       "images": [],
-      "amenities": ["WiFi", "Meeting Rooms"]
+      "amenities": [
+        "WiFi",
+        "Meeting Rooms"
+      ]
     },
     {
-      "id": 26,
+      "id": "26",
       "name": "Salem Grand Estancia",
       "location": "Salem, India",
       "pricePerNight": 4000,
@@ -284,10 +372,14 @@
       "description": "Luxury stay on the highway.",
       "thumbnail": "https://placehold.co/600x400/gold/white?text=Grand+Estancia",
       "images": [],
-      "amenities": ["Pool", "Restaurant", "Spa"]
+      "amenities": [
+        "Pool",
+        "Restaurant",
+        "Spa"
+      ]
     },
     {
-      "id": 27,
+      "id": "27",
       "name": "Yercaud Foothills Resort",
       "location": "Salem, India",
       "pricePerNight": 3000,
@@ -295,10 +387,13 @@
       "description": "Nature stay near Yercaud hills.",
       "thumbnail": "https://placehold.co/600x400/green/white?text=Foothills",
       "images": [],
-      "amenities": ["Garden", "Trekking"]
+      "amenities": [
+        "Garden",
+        "Trekking"
+      ]
     },
     {
-      "id": 28,
+      "id": "28",
       "name": "Salem City Lodge",
       "location": "Salem, India",
       "pricePerNight": 1500,
@@ -306,10 +401,13 @@
       "description": "Budget stay near bus stand.",
       "thumbnail": "https://placehold.co/600x400/brown/white?text=City+Lodge",
       "images": [],
-      "amenities": ["Parking", "24h Check-in"]
+      "amenities": [
+        "Parking",
+        "24h Check-in"
+      ]
     },
     {
-      "id": 29,
+      "id": "29",
       "name": "Steel City Suites",
       "location": "Salem, India",
       "pricePerNight": 2800,
@@ -317,52 +415,78 @@
       "description": "Comfortable business hotel.",
       "thumbnail": "https://placehold.co/600x400/grey/white?text=Steel+City",
       "images": [],
-      "amenities": ["WiFi", "Conference"]
+      "amenities": [
+        "WiFi",
+        "Conference"
+      ]
     },
     {
-      "id": 30,
+      "id": "30",
       "name": "Highway Inn Salem",
       "location": "Salem, India",
       "pricePerNight": 2200,
-      "rating": 4.0,
+      "rating": 4,
       "description": "Perfect for travelers passing through.",
       "thumbnail": "https://placehold.co/600x400/red/white?text=Highway+Inn",
       "images": [],
-      "amenities": ["Parking", "Restaurant"]
+      "amenities": [
+        "Parking",
+        "Restaurant"
+      ]
     }
   ],
   "rooms": [
     {
-      "id": 101,
+      "id": "101",
       "hotelId": 1,
       "roomNumber": "101",
       "type": "Deluxe",
       "price": 4500,
       "isAvailable": true,
       "maxGuests": 2,
-      "features": ["King Bed", "City View"]
+      "features": [
+        "King Bed",
+        "City View"
+      ]
     },
     {
-      "id": 201,
+      "id": "201",
       "hotelId": 6,
       "roomNumber": "201",
       "type": "Sea View Suite",
       "price": 8500,
       "isAvailable": true,
       "maxGuests": 2,
-      "features": ["Ocean View", "Bathtub"]
+      "features": [
+        "Ocean View",
+        "Bathtub"
+      ]
     },
     {
-      "id": 301,
+      "id": "301",
       "hotelId": 26,
       "roomNumber": "305",
       "type": "Standard",
       "price": 4000,
       "isAvailable": true,
       "maxGuests": 2,
-      "features": ["Queen Bed", "Free WiFi"]
+      "features": [
+        "Queen Bed",
+        "Free WiFi"
+      ]
     }
   ],
-  "bookings": [],
+  "bookings": [
+    {
+      "id": "bfc5",
+      "roomId": 201,
+      "guestName": "sd",
+      "email": "dinesh@gmail.com",
+      "checkInDate": "2026-12-30",
+      "checkOutDate": "2026-02-01",
+      "totalPrice": 0,
+      "status": "confirmed"
+    }
+  ],
   "users": []
 }

@@ -1,0 +1,57 @@
+<div class="confirmation-container">
+  
+  <div *ngIf="isLoading" class="loading">
+    <h2>Generating Receipt...</h2>
+  </div>
+
+  <mat-card *ngIf="!isLoading && booking && hotel" class="receipt-card">
+    <div class="success-header">
+      <h1>Booking Confirmed!</h1>
+      <p>Thank you for choosing {{ hotel.name }}</p>
+    </div>
+
+    <mat-card-content>
+      <div class="details-grid">
+        <div class="detail-item">
+          <span class="label">Guest Name:</span>
+          <span class="value">{{ booking.guestName }}</span>
+        </div>
+        
+        <div class="detail-item">
+          <span class="label">Email:</span>
+          <span class="value">{{ booking.email }}</span>
+        </div>
+
+        <div class="detail-item">
+          <span class="label">Hotel:</span>
+          <span class="value">{{ hotel.name }}</span>
+        </div>
+
+        <div class="detail-item">
+          <span class="label">Location:</span>
+          <span class="value">{{ hotel.location }}</span>
+        </div>
+
+        <div class="detail-item">
+          <span class="label">Check-in:</span>
+          <span class="value">{{ booking.checkInDate }}</span>
+        </div>
+
+        <div class="detail-item">
+          <span class="label">Check-out:</span>
+          <span class="value">{{ booking.checkOutDate }}</span>
+        </div>
+      </div>
+      
+      <div class="total-price">
+        <span>Total Paid:</span>
+        <span>Confirmed</span> 
+      </div>
+    </mat-card-content>
+
+    <mat-card-actions align="center">
+      <button mat-raised-button color="primary" routerLink="/">Return Home</button>
+    </mat-card-actions>
+  </mat-card>
+
+</div>
