@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router'; // <--- 1. Import RouterModule
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,7 +12,14 @@ import { Room } from '../../models/room.model';
 @Component({
   selector: 'app-hotel-detail',
   standalone: true,
-  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule, MatChipsModule],
+  imports: [
+    CommonModule, 
+    RouterModule, // <--- 2. Add it here!
+    MatCardModule, 
+    MatButtonModule, 
+    MatIconModule, 
+    MatChipsModule
+  ],
   templateUrl: './hotel-detail.html',
   styleUrl: './hotel-detail.css'
 })
@@ -29,12 +36,10 @@ export class HotelDetailComponent implements OnInit {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     
     if (id) {
-      // 1. Get Hotel Details
       this.hotelService.getHotelById(id).subscribe((data: Hotel) => {
         this.hotel = data;
       });
 
-      // 2. Get Available Rooms
       this.hotelService.getRoomsByHotelId(id).subscribe((data: Room[]) => {
         this.rooms = data;
       });
