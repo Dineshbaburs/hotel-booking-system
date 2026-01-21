@@ -1,11 +1,10 @@
 export interface Booking {
-  id: number;
-  userId: number;
-  hotelId: number;
+  id?: number; // Optional because DB creates it
   roomId: number;
-  checkInDate: string; // JSON server stores dates as strings
+  guestName: string;
+  email: string;
+  checkInDate: string;
   checkOutDate: string;
-  totalAmount: number;
-  status: 'confirmed' | 'cancelled' | 'pending';
-  guestCount: number;
+  totalPrice: number;
+  status: 'confirmed' | 'cancelled';
 }

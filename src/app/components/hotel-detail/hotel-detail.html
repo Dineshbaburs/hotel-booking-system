@@ -31,9 +31,9 @@
             <p class="price">{{ room.price | currency }} / night</p>
           </mat-card-content>
           <mat-card-actions>
-            <button mat-raised-button color="primary" [disabled]="!room.isAvailable">
-              {{ room.isAvailable ? 'BOOK NOW' : 'SOLD OUT' }}
-            </button>
+            <button mat-raised-button color="primary" [routerLink]="['/book', room.id]" [disabled]="!room.isAvailable">
+  {{ room.isAvailable ? 'BOOK NOW' : 'SOLD OUT' }}
+</button>
           </mat-card-actions>
         </mat-card>
       </div>
