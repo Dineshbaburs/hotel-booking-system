@@ -27,7 +27,7 @@ export class HotelDetailComponent implements OnInit {
   hotel: Hotel | undefined;
   rooms: Room[] = [];
 
-  // FIXED: Added these missing variables to stop the errors
+  // ✅ FIXED: Added these missing variables so the HTML works!
   isLoading: boolean = true;
   errorMessage: string = '';
 
@@ -44,7 +44,7 @@ export class HotelDetailComponent implements OnInit {
       this.hotelService.getHotelById(id).subscribe({
         next: (data: Hotel) => {
           this.hotel = data;
-          this.isLoading = false;
+          this.isLoading = false; // Stop loading
         },
         error: (err) => {
           console.error('Error fetching hotel:', err);

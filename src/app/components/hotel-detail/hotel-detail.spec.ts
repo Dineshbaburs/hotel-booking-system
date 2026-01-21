@@ -1,25 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { HttpClientTestingModule } from '@angular/common/http/testing'; // <--- Needed for HotelService
-import { RouterTestingModule } from '@angular/router/testing'; // <--- Needed for ActivatedRoute
-import { HotelDetailComponent } from './hotel-detail'; // <--- FIXED: Correct Class Name
 
-describe('HotelDetailComponent', () => {
-  let component: HotelDetailComponent;
-  let fixture: ComponentFixture<HotelDetailComponent>;
+import { HotelDetail } from './hotel-detail';
+
+describe('HotelDetail', () => {
+  let component: HotelDetail;
+  let fixture: ComponentFixture<HotelDetail>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        HotelDetailComponent, // <--- Import the Standalone Component
-        HttpClientTestingModule, // <--- Fakes the HTTP calls so tests don't fail
-        RouterTestingModule // <--- Fakes the Router
-      ]
+      imports: [HotelDetail]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HotelDetailComponent);
+    fixture = TestBed.createComponent(HotelDetail);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    await fixture.whenStable();
   });
 
   it('should create', () => {
