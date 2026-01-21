@@ -3,9 +3,9 @@ export interface Hotel {
   name: string;
   location: string;
   pricePerNight: number;
-  rating: number;
+  rating: number; // 1 to 5
   description: string;
-  thumbnail: string;
-  images: string[];
-  amenities: string[];
+  thumbnail: string; // URL to image
+  images: string[]; // Array of image URLs
+  amenities: string[]; // e.g., ['WiFi', 'Pool', 'Parking']
 }
