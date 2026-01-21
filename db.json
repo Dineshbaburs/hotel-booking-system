@@ -25,31 +25,6 @@
   ],
   "rooms": [
     {
-      "id": 101,
-      "hotelId": 1,
-      "roomNumber": "A-101",
-      "type": "Deluxe",
-      "price": 250,
-      "isAvailable": true,
-      "maxGuests": 2,
-      "features": ["King Bed", "City View"]
-    },
-    {
-      "id": 102,
-      "hotelId": 2,
-      "roomNumber": "B-205",
-      "type": "Standard",
-      "price": 120,
-      "isAvailable": true,
-      "maxGuests": 2,
-      "features": ["Queen Bed", "Garden View"]
-    }
-  ],
-  "bookings": [],
-  "users": []
-}
-"rooms": [
-    {
       "id": 1,
       "hotelId": 1,
       "roomNumber": "101",
@@ -79,4 +54,7 @@
       "maxGuests": 2,
       "features": ["Queen Bed", "Free WiFi"]
     }
-  ]
+  ],
+  "bookings": [],
+  "users": []
+}
