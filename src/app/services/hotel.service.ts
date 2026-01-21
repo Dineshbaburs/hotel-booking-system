@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators'; // <--- IMPORT THIS
 import { Hotel } from '../models/hotel.model';
 import { Room } from '../models/room.model';
 import { Booking } from '../models/booking.model';
@@ -13,14 +14,20 @@ export class HotelService {
 
   constructor(private http: HttpClient) {}
 
-  // FIXED: Now accepts a 'location' to filter the list
+  // FIXED: We filter inside the app to ensure it works
   getHotels(location?: string): Observable<Hotel[]> {
-    let url = `${this.apiUrl}/hotels`;
-    if (location) {
-      // ?location_like=Goa finds "Goa, India"
-      url += `?location_like=${location}`; 
-    }
-    return this.http.get<Hotel[]>(url);
+    // 1. Get ALL hotels first
+    return this.http.get<Hotel[]>(`${this.apiUrl}/hotels`).pipe(
+      // 2. Filter them manually using JavaScript
+      map(hotels => {
+        if (location) {
+          return hotels.filter(hotel => 
+            hotel.location.toLowerCase().includes(location.toLowerCase())
+          );
+        }
+        return hotels; // Return all if no location selected
+      })
+    );
   }
 
   getHotelById(id: number): Observable<Hotel> {

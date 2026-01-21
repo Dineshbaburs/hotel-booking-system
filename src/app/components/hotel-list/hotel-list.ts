@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, ActivatedRoute } from '@angular/router'; // <--- 1. Import ActivatedRoute
+import { RouterModule, ActivatedRoute } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -25,15 +25,15 @@ export class HotelListComponent implements OnInit {
 
   constructor(
     private hotelService: HotelService,
-    private route: ActivatedRoute // <--- 2. Inject Route
+    private route: ActivatedRoute
   ) {}
 
   ngOnInit(): void {
-    // 3. Listen to the URL query parameters
+    // Listen for URL changes
     this.route.queryParams.subscribe(params => {
-      const location = params['location']; // Get "Bengaluru" from URL
+      const location = params['location'];
       
-      // 4. Send location to the service
+      // Call service (which now handles the filtering safely)
       this.hotelService.getHotels(location).subscribe(data => {
         this.hotels = data;
       });
