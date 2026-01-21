@@ -16,16 +16,14 @@ export class HotelService {
 
   // FIXED: We filter inside the app to ensure it works
   getHotels(location?: string): Observable<Hotel[]> {
-    // 1. Get ALL hotels first
     return this.http.get<Hotel[]>(`${this.apiUrl}/hotels`).pipe(
-      // 2. Filter them manually using JavaScript
       map(hotels => {
         if (location) {
           return hotels.filter(hotel => 
             hotel.location.toLowerCase().includes(location.toLowerCase())
           );
         }
-        return hotels; // Return all if no location selected
+        return hotels;
       })
     );
   }
