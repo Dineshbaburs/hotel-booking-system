@@ -13,12 +13,11 @@ export class HotelService {
 
   constructor(private http: HttpClient) {}
 
-  // UPDATED: Now accepts an optional 'location' parameter
+  // FIXED: Accepts 'location' and filters the database
   getHotels(location?: string): Observable<Hotel[]> {
     let url = `${this.apiUrl}/hotels`;
     if (location) {
-      // json-server allows filtering like ?location=New York
-      // We use 'like' to match partial names if needed, or exact match
+      // Use 'like' to find "Bengaluru" inside "Bengaluru, India"
       url += `?location_like=${location}`; 
     }
     return this.http.get<Hotel[]>(url);
