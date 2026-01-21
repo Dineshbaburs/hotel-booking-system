@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute, RouterModule } from '@angular/router'; // <--- 1. Import RouterModule
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -14,7 +14,7 @@ import { Room } from '../../models/room.model';
   standalone: true,
   imports: [
     CommonModule, 
-    RouterModule, // <--- 2. Add it here!
+    RouterModule, 
     MatCardModule, 
     MatButtonModule, 
     MatIconModule, 
@@ -26,6 +26,10 @@ import { Room } from '../../models/room.model';
 export class HotelDetailComponent implements OnInit {
   hotel: Hotel | undefined;
   rooms: Room[] = [];
+  
+  // ADDED THESE 2 VARIABLES TO FIX THE ERRORS
+  isLoading: boolean = true;
+  errorMessage: string = '';
 
   constructor(
     private route: ActivatedRoute,
@@ -36,13 +40,29 @@ export class HotelDetailComponent implements OnInit {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     
     if (id) {
-      this.hotelService.getHotelById(id).subscribe((data: Hotel) => {
-        this.hotel = data;
+      // 1. Get Hotel Details with Error Handling
+      this.hotelService.getHotelById(id).subscribe({
+        next: (data: Hotel) => {
+          this.hotel = data;
+          this.isLoading = false; // Stop loading on success
+        },
+        error: (err) => {
+          console.error('Error fetching hotel:', err);
+          this.errorMessage = 'Could not load hotel details. Please try again.';
+          this.isLoading = false; // Stop loading on error
+        }
       });
 
-      this.hotelService.getRoomsByHotelId(id).subscribe((data: Room[]) => {
-        this.rooms = data;
+      // 2. Get Available Rooms
+      this.hotelService.getRoomsByHotelId(id).subscribe({
+        next: (data: Room[]) => {
+          this.rooms = data;
+        },
+        error: (err) => console.error('Error fetching rooms:', err)
       });
+    } else {
+      this.errorMessage = 'Invalid Hotel ID';
+      this.isLoading = false;
     }
   }
 }
