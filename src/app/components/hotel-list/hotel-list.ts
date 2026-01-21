@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router'; // <--- THIS WAS MISSING
+import { RouterModule } from '@angular/router'; // <--- CRITICAL IMPORT
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,7 +12,7 @@ import { Hotel } from '../../models/hotel.model';
   standalone: true,
   imports: [
     CommonModule, 
-    RouterModule, // <--- REQUIRED for [routerLink] to work
+    RouterModule, // <--- THIS MAKES THE BUTTON WORK
     MatCardModule, 
     MatButtonModule, 
     MatIconModule
