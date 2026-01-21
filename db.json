@@ -48,3 +48,35 @@
   "bookings": [],
   "users": []
 }
+"rooms": [
+    {
+      "id": 1,
+      "hotelId": 1,
+      "roomNumber": "101",
+      "type": "Deluxe",
+      "price": 250,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": ["King Bed", "Ocean View", "Mini Bar"]
+    },
+    {
+      "id": 2,
+      "hotelId": 1,
+      "roomNumber": "102",
+      "type": "Suite",
+      "price": 450,
+      "isAvailable": false,
+      "maxGuests": 4,
+      "features": ["2 Queen Beds", "Balcony", "Jacuzzi"]
+    },
+    {
+      "id": 3,
+      "hotelId": 2,
+      "roomNumber": "201",
+      "type": "Standard",
+      "price": 120,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": ["Queen Bed", "Free WiFi"]
+    }
+  ]
