@@ -55,3 +55,10 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
+/* ... existing styles ... */
+
+.center-actions {
+  display: flex;
+  justify-content: center; /* This does the centering */
+  margin-bottom: 20px;
+}

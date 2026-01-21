@@ -18,8 +18,8 @@
         </div>
         
         <div class="detail-item">
-          <span class="label">Email:</span>
-          <span class="value">{{ booking.email }}</span>
+          <span class="label">Booking ID:</span>
+          <span class="value">#{{ booking.id }}</span>
         </div>
 
         <div class="detail-item">
@@ -28,8 +28,10 @@
         </div>
 
         <div class="detail-item">
-          <span class="label">Location:</span>
-          <span class="value">{{ hotel.location }}</span>
+          <span class="label">Assigned Room:</span>
+          <span class="value" style="font-size: 1.2rem; font-weight: bold; color: #1a237e;">
+            {{ assignedRoomNumber }}
+          </span>
         </div>
 
         <div class="detail-item">
@@ -44,12 +46,12 @@
       </div>
       
       <div class="total-price">
-        <span>Total Paid:</span>
-        <span>Confirmed</span> 
+        <span>Payment Status:</span>
+        <span style="color: green;">Paid & Confirmed</span> 
       </div>
     </mat-card-content>
 
-    <mat-card-actions align="center">
+    <mat-card-actions class="center-actions">
       <button mat-raised-button color="primary" routerLink="/">Return Home</button>
     </mat-card-actions>
   </mat-card>

@@ -53,13 +53,12 @@ export class BookingFormComponent implements OnInit {
         email: this.bookingForm.value.email,
         checkInDate: this.bookingForm.value.checkInDate,
         checkOutDate: this.bookingForm.value.checkOutDate,
-        totalPrice: 0, 
+        totalPrice: 0, // This could be calculated based on dates later
         status: 'confirmed'
       };
 
-      // UPDATED LOGIC:
+      // UPDATED LOGIC: Create booking -> Get ID -> Navigate to Receipt
       this.hotelService.createBooking(bookingData).subscribe((newBooking) => {
-        // Navigate to the NEW Confirmation Page using the new ID
         this.router.navigate(['/confirmation', newBooking.id]); 
       });
     }

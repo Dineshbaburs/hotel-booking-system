@@ -20,6 +20,9 @@ export class BookingConfirmationComponent implements OnInit {
   room: Room | undefined;
   hotel: Hotel | undefined;
   isLoading = true;
+  
+  // NEW: Variable to hold the random room number
+  assignedRoomNumber: number = 0;
 
   constructor(
     private route: ActivatedRoute,
@@ -29,16 +32,16 @@ export class BookingConfirmationComponent implements OnInit {
   ngOnInit(): void {
     const bookingId = Number(this.route.snapshot.paramMap.get('id'));
 
+    // GENERATE RANDOM ROOM NUMBER (Between 101 and 599)
+    this.assignedRoomNumber = Math.floor(Math.random() * 500) + 100;
+
     if (bookingId) {
-      // 1. Get the Booking Details
       this.hotelService.getBookingById(bookingId).subscribe(bookingData => {
         this.booking = bookingData;
 
-        // 2. Get the Room Details (using roomId from booking)
         this.hotelService.getRoomById(bookingData.roomId).subscribe(roomData => {
           this.room = roomData;
 
-          // 3. Get the Hotel Details (using hotelId from room)
           this.hotelService.getHotelById(roomData.hotelId).subscribe(hotelData => {
             this.hotel = hotelData;
             this.isLoading = false;

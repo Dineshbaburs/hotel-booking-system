@@ -35,19 +35,16 @@ export class HotelService {
     return this.http.get<Room[]>(`${this.apiUrl}/rooms?hotelId=${hotelId}`);
   }
 
-  // --- NEW METHODS BELOW ---
+  // --- NEW METHODS (These were missing!) ---
 
-  // 1. Get a specific room (to show details on confirmation)
   getRoomById(roomId: string | number): Observable<Room> {
     return this.http.get<Room>(`${this.apiUrl}/rooms/${roomId}`);
   }
 
-  // 2. Create Booking (Returns the saved booking with ID)
   createBooking(booking: Booking): Observable<Booking> {
     return this.http.post<Booking>(`${this.apiUrl}/bookings`, booking);
   }
 
-  // 3. Get Booking by ID (For the Confirmation Page)
   getBookingById(id: number): Observable<Booking> {
     return this.http.get<Booking>(`${this.apiUrl}/bookings/${id}`);
   }
