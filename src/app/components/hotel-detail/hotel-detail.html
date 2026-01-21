@@ -28,12 +28,12 @@
             <ul>
               <li *ngFor="let feature of room.features">{{ feature }}</li>
             </ul>
-            <p class="price">{{ room.price | currency }} / night</p>
+            <p class="price">{{ room.price | currency:'INR' }} / night</p>
           </mat-card-content>
           <mat-card-actions>
             <button mat-raised-button color="primary" [routerLink]="['/book', room.id]" [disabled]="!room.isAvailable">
-  {{ room.isAvailable ? 'BOOK NOW' : 'SOLD OUT' }}
-</button>
+              {{ room.isAvailable ? 'BOOK NOW' : 'SOLD OUT' }}
+            </button>
           </mat-card-actions>
         </mat-card>
       </div>

@@ -13,7 +13,7 @@
       <mat-card-content>
         <p class="description">{{ hotel.description }}</p>
         <div class="info-row">
-          <span class="price">{{ hotel.pricePerNight | currency }} / night</span>
+          <span class="price">{{ hotel.pricePerNight | currency:'INR' }} / night</span>
           <span class="rating">
             <mat-icon>star</mat-icon> {{ hotel.rating }}
           </span>
