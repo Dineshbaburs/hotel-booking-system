@@ -29,11 +29,10 @@ export class HotelListComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // Listen for URL changes
+    // Listen for Search Filter (e.g. ?location=Salem)
     this.route.queryParams.subscribe(params => {
       const location = params['location'];
       
-      // Call service (which now handles the filtering safely)
       this.hotelService.getHotels(location).subscribe(data => {
         this.hotels = data;
       });
