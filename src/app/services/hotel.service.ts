@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators'; // <--- IMPORT THIS
+import { map } from 'rxjs/operators'; // <--- Required for filtering
 import { Hotel } from '../models/hotel.model';
 import { Room } from '../models/room.model';
 import { Booking } from '../models/booking.model';
@@ -14,7 +14,7 @@ export class HotelService {
 
   constructor(private http: HttpClient) {}
 
-  // FIXED: We filter inside the app to ensure it works
+  // FIXED: Manual filtering ensures Search always works
   getHotels(location?: string): Observable<Hotel[]> {
     return this.http.get<Hotel[]>(`${this.apiUrl}/hotels`).pipe(
       map(hotels => {

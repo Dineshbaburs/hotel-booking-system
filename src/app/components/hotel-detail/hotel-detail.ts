@@ -26,8 +26,8 @@ import { Room } from '../../models/room.model';
 export class HotelDetailComponent implements OnInit {
   hotel: Hotel | undefined;
   rooms: Room[] = [];
-  
-  // ADDED THESE 2 VARIABLES TO FIX THE ERRORS
+
+  // FIXED: Added these missing variables to stop the errors
   isLoading: boolean = true;
   errorMessage: string = '';
 
@@ -40,16 +40,16 @@ export class HotelDetailComponent implements OnInit {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     
     if (id) {
-      // 1. Get Hotel Details with Error Handling
+      // 1. Get Hotel Details
       this.hotelService.getHotelById(id).subscribe({
         next: (data: Hotel) => {
           this.hotel = data;
-          this.isLoading = false; // Stop loading on success
+          this.isLoading = false;
         },
         error: (err) => {
           console.error('Error fetching hotel:', err);
           this.errorMessage = 'Could not load hotel details. Please try again.';
-          this.isLoading = false; // Stop loading on error
+          this.isLoading = false;
         }
       });
 
