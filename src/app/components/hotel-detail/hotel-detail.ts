@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common'; // <--- Required for *ngIf
+import { ActivatedRoute, RouterModule } from '@angular/router'; // <--- Required for Links
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -13,7 +13,7 @@ import { Room } from '../../models/room.model';
   selector: 'app-hotel-detail',
   standalone: true,
   imports: [
-    CommonModule, 
+    CommonModule, // <--- MUST be here
     RouterModule, 
     MatCardModule, 
     MatButtonModule, 
@@ -21,15 +21,16 @@ import { Room } from '../../models/room.model';
     MatChipsModule
   ],
   templateUrl: './hotel-detail.html',
-  styleUrl: './hotel-detail.css'
+  styleUrls: ['./hotel-detail.css'] // <--- Use styleUrls (Safe for all Angular versions)
 })
 export class HotelDetailComponent implements OnInit {
   hotel: Hotel | undefined;
   rooms: Room[] = [];
 
-  // ✅ FIXED: Added these missing variables so the HTML works!
-  isLoading: boolean = true;
-  errorMessage: string = '';
+  // --- VARIABLES REQUIRED BY HTML ---
+  isLoading: boolean = true;      // <--- Used by *ngIf="isLoading"
+  errorMessage: string = '';      // <--- Used by *ngIf="errorMessage"
+  // ----------------------------------
 
   constructor(
     private route: ActivatedRoute,
@@ -39,30 +40,32 @@ export class HotelDetailComponent implements OnInit {
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     
-    if (id) {
-      // 1. Get Hotel Details
-      this.hotelService.getHotelById(id).subscribe({
-        next: (data: Hotel) => {
-          this.hotel = data;
-          this.isLoading = false; // Stop loading
-        },
-        error: (err) => {
-          console.error('Error fetching hotel:', err);
-          this.errorMessage = 'Could not load hotel details. Please try again.';
-          this.isLoading = false;
-        }
-      });
-
-      // 2. Get Available Rooms
-      this.hotelService.getRoomsByHotelId(id).subscribe({
-        next: (data: Room[]) => {
-          this.rooms = data;
-        },
-        error: (err) => console.error('Error fetching rooms:', err)
-      });
-    } else {
+    // Safety check: If ID is missing or NaN, show error
+    if (!id) {
       this.errorMessage = 'Invalid Hotel ID';
       this.isLoading = false;
+      return;
     }
+
+    // 1. Get Hotel Details
+    this.hotelService.getHotelById(id).subscribe({
+      next: (data: Hotel) => {
+        this.hotel = data;
+        this.isLoading = false; // Data Loaded -> Hide Loading
+      },
+      error: (err) => {
+        console.error('Error fetching hotel:', err);
+        this.errorMessage = 'Could not load hotel details. Check if db.json is running.';
+        this.isLoading = false;
+      }
+    });
+
+    // 2. Get Available Rooms
+    this.hotelService.getRoomsByHotelId(id).subscribe({
+      next: (data: Room[]) => {
+        this.rooms = data;
+      },
+      error: (err) => console.error('Error fetching rooms:', err)
+    });
   }
 }

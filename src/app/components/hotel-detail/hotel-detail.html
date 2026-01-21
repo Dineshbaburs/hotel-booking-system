@@ -4,7 +4,7 @@
     <h2>Loading Hotel Details...</h2>
   </div>
 
-  <div *ngIf="errorMessage" class="status-message error">
+  <div *ngIf="!isLoading && errorMessage" class="status-message error">
     <h2>Error</h2>
     <p>{{ errorMessage }}</p>
     <button mat-raised-button color="primary" routerLink="/hotels">Back to List</button>
@@ -31,9 +31,6 @@
 
       <div class="rooms-section">
         <h2>Available Rooms</h2>
-        
-        <p *ngIf="rooms.length === 0">No rooms available at the moment.</p>
-
         <div class="room-list">
           <mat-card class="room-card" *ngFor="let room of rooms">
             <mat-card-header>
