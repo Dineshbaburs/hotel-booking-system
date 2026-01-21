@@ -1,20 +1,25 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing'; 
+import { RouterTestingModule } from '@angular/router/testing'; 
+import { HotelDetailComponent } from './hotel-detail'; // <--- FIXED: Only import HotelDetailComponent
 
-import { HotelDetail } from './hotel-detail';
-
-describe('HotelDetail', () => {
-  let component: HotelDetail;
-  let fixture: ComponentFixture<HotelDetail>;
+describe('HotelDetailComponent', () => {
+  let component: HotelDetailComponent;
+  let fixture: ComponentFixture<HotelDetailComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HotelDetail]
+      imports: [
+        HotelDetailComponent, 
+        HttpClientTestingModule, 
+        RouterTestingModule 
+      ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HotelDetail);
+    fixture = TestBed.createComponent(HotelDetailComponent);
     component = fixture.componentInstance;
-    await fixture.whenStable();
+    fixture.detectChanges();
   });
 
   it('should create', () => {
