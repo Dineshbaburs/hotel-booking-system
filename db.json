@@ -7,7 +7,7 @@
       "pricePerNight": 4500,
       "rating": 4.5,
       "description": "Luxury business hotel in Indiranagar.",
-      "thumbnail": "https://placehold.co/600x400/indigo/white?text=Royal+Bengaluru",
+      "thumbnail": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "WiFi",
@@ -22,7 +22,7 @@
       "pricePerNight": 2500,
       "rating": 4,
       "description": "Affordable stay near Electronic City.",
-      "thumbnail": "https://placehold.co/600x400/blue/white?text=Tech+City",
+      "thumbnail": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "WiFi",
@@ -36,7 +36,7 @@
       "pricePerNight": 6000,
       "rating": 5,
       "description": "Premium hotel in the heart of the city.",
-      "thumbnail": "https://placehold.co/600x400/gold/white?text=Grand+MG",
+      "thumbnail": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Spa",
@@ -51,7 +51,7 @@
       "pricePerNight": 3500,
       "rating": 4.2,
       "description": "Peaceful resort on the outskirts.",
-      "thumbnail": "https://placehold.co/600x400/green/white?text=Garden+Resort",
+      "thumbnail": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Garden",
@@ -66,7 +66,7 @@
       "pricePerNight": 4200,
       "rating": 4.4,
       "description": "Perfect for business travelers.",
-      "thumbnail": "https://placehold.co/600x400/grey/white?text=Whitefield+Suites",
+      "thumbnail": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Conference Hall",
@@ -81,7 +81,7 @@
       "pricePerNight": 8500,
       "rating": 5,
       "description": "Iconic hotel overlooking the Gateway.",
-      "thumbnail": "https://placehold.co/600x400/orange/white?text=Sea+View",
+      "thumbnail": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Sea View",
@@ -96,7 +96,7 @@
       "pricePerNight": 6500,
       "rating": 4.5,
       "description": "Stay right on Juhu Beach.",
-      "thumbnail": "https://placehold.co/600x400/yellow/white?text=Juhu+Resort",
+      "thumbnail": "https://images.unsplash.com/photo-1495365200479-c4ed1d35e1aa?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Beach Access",
@@ -111,7 +111,7 @@
       "pricePerNight": 5000,
       "rating": 4.3,
       "description": "Trendy hotel in the suburbs.",
-      "thumbnail": "https://placehold.co/600x400/pink/white?text=Bandra+Stay",
+      "thumbnail": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Cafe",
@@ -126,7 +126,7 @@
       "pricePerNight": 3200,
       "rating": 4,
       "description": "Close to the airport and offices.",
-      "thumbnail": "https://placehold.co/600x400/purple/white?text=Business+Inn",
+      "thumbnail": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Airport Shuttle",
@@ -140,7 +140,7 @@
       "pricePerNight": 4800,
       "rating": 4.6,
       "description": "Historical charm in South Mumbai.",
-      "thumbnail": "https://placehold.co/600x400/brown/white?text=Heritage+Hotel",
+      "thumbnail": "https://images.unsplash.com/photo-1551918120-9739cb430c6d?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Heritage Tour",
@@ -154,7 +154,7 @@
       "pricePerNight": 4000,
       "rating": 4.5,
       "description": "Stay near Connaught Place.",
-      "thumbnail": "https://placehold.co/600x400/red/white?text=Capital+Palace",
+      "thumbnail": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Metro Access",
@@ -169,7 +169,7 @@
       "pricePerNight": 3500,
       "rating": 4.2,
       "description": "Stylish stay in Hauz Khas.",
-      "thumbnail": "https://placehold.co/600x400/teal/white?text=Boutique+Stay",
+      "thumbnail": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Rooftop Cafe",
@@ -183,7 +183,7 @@
       "pricePerNight": 2000,
       "rating": 3.8,
       "description": "Budget friendly shopping hub.",
-      "thumbnail": "https://placehold.co/600x400/cyan/white?text=Karol+Bagh",
+      "thumbnail": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Market Access",
@@ -197,7 +197,7 @@
       "pricePerNight": 5500,
       "rating": 4.7,
       "description": "Luxury transit near IGI Airport.",
-      "thumbnail": "https://placehold.co/600x400/black/white?text=Aerocity",
+      "thumbnail": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Pool",
@@ -212,7 +212,7 @@
       "pricePerNight": 3000,
       "rating": 4.3,
       "description": "Experience culture in Chandni Chowk.",
-      "thumbnail": "https://placehold.co/600x400/orange/white?text=Haveli",
+      "thumbnail": "https://images.unsplash.com/photo-1551918120-9739cb430c6d?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Cultural Walk",
@@ -226,7 +226,7 @@
       "pricePerNight": 5000,
       "rating": 4.8,
       "description": "Beachfront cottages in Calangute.",
-      "thumbnail": "https://placehold.co/600x400/blue/white?text=Goa+Paradise",
+      "thumbnail": "https://images.unsplash.com/photo-1495365200479-c4ed1d35e1aa?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Beach Access",
@@ -241,7 +241,7 @@
       "pricePerNight": 3000,
       "rating": 4.1,
       "description": "Central stay near casinos.",
-      "thumbnail": "https://placehold.co/600x400/yellow/white?text=Panjim+City",
+      "thumbnail": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Casino Access",
@@ -255,7 +255,7 @@
       "pricePerNight": 6000,
       "rating": 4.9,
       "description": "Quiet luxury in Palolem.",
-      "thumbnail": "https://placehold.co/600x400/green/white?text=South+Retreat",
+      "thumbnail": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Private Beach",
@@ -270,7 +270,7 @@
       "pricePerNight": 1500,
       "rating": 4.2,
       "description": "Best for backpackers and parties.",
-      "thumbnail": "https://placehold.co/600x400/purple/white?text=Party+Hostel",
+      "thumbnail": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Bar",
@@ -285,7 +285,7 @@
       "pricePerNight": 7500,
       "rating": 5,
       "description": "Stunning cliff views.",
-      "thumbnail": "https://placehold.co/600x400/red/white?text=Cliff+Resort",
+      "thumbnail": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Infinity Pool",
@@ -299,7 +299,7 @@
       "pricePerNight": 9000,
       "rating": 5,
       "description": "Palatial luxury in Guindy.",
-      "thumbnail": "https://placehold.co/600x400/gold/white?text=Grand+Chola",
+      "thumbnail": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Luxury Spa",
@@ -314,7 +314,7 @@
       "pricePerNight": 2500,
       "rating": 4,
       "description": "Close to the famous Marina Beach.",
-      "thumbnail": "https://placehold.co/600x400/blue/white?text=Marina+Stay",
+      "thumbnail": "https://images.unsplash.com/photo-1495365200479-c4ed1d35e1aa?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Sea Breeze",
@@ -328,7 +328,7 @@
       "pricePerNight": 3000,
       "rating": 4.3,
       "description": "Shopping hub of Chennai.",
-      "thumbnail": "https://placehold.co/600x400/pink/white?text=T-Nagar",
+      "thumbnail": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Shopping",
@@ -342,7 +342,7 @@
       "pricePerNight": 5500,
       "rating": 4.6,
       "description": "Weekend getaway on East Coast Road.",
-      "thumbnail": "https://placehold.co/600x400/green/white?text=ECR+Resort",
+      "thumbnail": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Private Beach",
@@ -356,7 +356,7 @@
       "pricePerNight": 3800,
       "rating": 4.2,
       "description": "Convenient for IT professionals.",
-      "thumbnail": "https://placehold.co/600x400/grey/white?text=OMR+Hotel",
+      "thumbnail": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "WiFi",
@@ -370,7 +370,7 @@
       "pricePerNight": 4000,
       "rating": 4.5,
       "description": "Luxury stay on the highway.",
-      "thumbnail": "https://placehold.co/600x400/gold/white?text=Grand+Estancia",
+      "thumbnail": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Pool",
@@ -385,7 +385,7 @@
       "pricePerNight": 3000,
       "rating": 4.2,
       "description": "Nature stay near Yercaud hills.",
-      "thumbnail": "https://placehold.co/600x400/green/white?text=Foothills",
+      "thumbnail": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Garden",
@@ -399,7 +399,7 @@
       "pricePerNight": 1500,
       "rating": 3.8,
       "description": "Budget stay near bus stand.",
-      "thumbnail": "https://placehold.co/600x400/brown/white?text=City+Lodge",
+      "thumbnail": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Parking",
@@ -413,7 +413,7 @@
       "pricePerNight": 2800,
       "rating": 4.1,
       "description": "Comfortable business hotel.",
-      "thumbnail": "https://placehold.co/600x400/grey/white?text=Steel+City",
+      "thumbnail": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "WiFi",
@@ -427,7 +427,7 @@
       "pricePerNight": 2200,
       "rating": 4,
       "description": "Perfect for travelers passing through.",
-      "thumbnail": "https://placehold.co/600x400/red/white?text=Highway+Inn",
+      "thumbnail": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=600&q=80",
       "images": [],
       "amenities": [
         "Parking",
@@ -534,6 +534,16 @@
       "email": "hgfhh@gamil.com",
       "checkInDate": "2002-02-13",
       "checkOutDate": "0002-02-22",
+      "totalPrice": 0,
+      "status": "confirmed"
+    },
+    {
+      "id": "425d",
+      "roomId": 201,
+      "guestName": "zxcvbn",
+      "email": "dfzxgchvb@gmail.com",
+      "checkInDate": "2026-01-13",
+      "checkOutDate": "2026-01-05",
       "totalPrice": 0,
       "status": "confirmed"
     }

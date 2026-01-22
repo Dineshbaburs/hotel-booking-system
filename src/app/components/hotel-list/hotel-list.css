@@ -1,24 +1,26 @@
 .list-container {
-  padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 h1 {
-  margin-bottom: 24px;
-  color: #3f51b5; /* Primary Color */
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
 }
 
-/* Grid Layout */
 .hotel-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 24px;
+  gap: 30px;
 }
 
-/* Card Styling */
 .hotel-card {
-  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures equal height */
+  transition: transform 0.2s;
 }
 
 .hotel-card:hover {
@@ -26,9 +28,20 @@ h1 {
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
+.hotel-card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+mat-card-content {
+  flex-grow: 1; /* Pushes button to bottom */
+  padding-top: 10px;
+}
+
 .description {
-  margin-top: 12px;
   color: #666;
+  font-size: 0.9rem;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -38,18 +51,15 @@ h1 {
 .info-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 16px;
   font-weight: bold;
+  margin-top: 10px;
 }
 
-.price {
-  font-size: 1.2rem;
-  color: #2e7d32; /* Green for money */
-}
+.price { color: #2e7d32; }
+.rating { color: #fbc02d; }
 
-.rating {
+mat-card-actions {
   display: flex;
-  align-items: center;
-  color: #ffb300; /* Gold star */
+  justify-content: flex-end;
+  padding: 16px;
 }

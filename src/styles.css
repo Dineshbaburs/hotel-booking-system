@@ -16,3 +16,12 @@ body {
 button.mat-mdc-raised-button.mat-primary {
   background-color: #1a237e !important; /* Matches navbar */
 }
+/* GLOBAL STYLES */
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #f5f5f5;
+  
+  /* PUSH CONTENT DOWN so it's not hidden behind the fixed navbar */
+  padding-top: 80px; 
+}
