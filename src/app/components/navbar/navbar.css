@@ -5,7 +5,7 @@ mat-toolbar {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* Ensures it stays on top of images/cards */
+  z-index: 1000; /* Stays on top of everything */
 
   /* 2. YOUR LUXURY STYLES */
   background: linear-gradient(90deg, #1a237e 0%, #283593 100%);
@@ -14,7 +14,7 @@ mat-toolbar {
   padding: 0 24px;
 }
 
-/* Brand Name (Gold Effect) */
+/* Brand Name - Gold Effect */
 span:first-child {
   font-weight: 900;
   font-size: 1.4rem;

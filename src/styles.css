@@ -27,7 +27,7 @@ body {
   background-color: #f5f5f5; 
   
   /* CRITICAL: Pushes content down so it shows below the fixed navbar */
-  padding-top: 70px; 
+  padding-top: 64px; 
 }
 
 /* Global Button Polish */

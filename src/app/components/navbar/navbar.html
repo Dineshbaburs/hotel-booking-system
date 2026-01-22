@@ -1,6 +1,17 @@
 <mat-toolbar color="primary">
-  <span>JDP Hotel Booking</span> <span class="spacer"></span>
+  <span routerLink="/">JDP Hotels</span>
+  <span class="spacer"></span>
+
   <button mat-button routerLink="/">Home</button>
-  <button mat-button routerLink="/hotels">All Hotels</button>
-  <button mat-button routerLink="/bookings">My Bookings</button>
+  <button mat-button routerLink="/hotels">Hotels</button>
+
+  <ng-container *ngIf="currentUser">
+    <button mat-button routerLink="/my-bookings">My Bookings</button>
+    <button mat-button (click)="logout()">Logout ({{ currentUser.name }})</button>
+  </ng-container>
+
+  <ng-container *ngIf="!currentUser">
+    <button mat-button routerLink="/login">Login</button>
+    <button mat-raised-button color="accent" routerLink="/register">Sign Up</button>
+  </ng-container>
 </mat-toolbar>
