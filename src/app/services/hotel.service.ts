@@ -14,6 +14,7 @@ export class HotelService {
 
   constructor(private http: HttpClient) {}
 
+  // 1. Get Hotels (with Search)
   getHotels(location?: string): Observable<Hotel[]> {
     return this.http.get<Hotel[]>(`${this.apiUrl}/hotels`).pipe(
       map(hotels => {
@@ -35,17 +36,20 @@ export class HotelService {
     return this.http.get<Room[]>(`${this.apiUrl}/rooms?hotelId=${hotelId}`);
   }
 
-  // --- NEW METHODS (These were missing!) ---
+  // --- 👇 THESE ARE THE MISSING FUNCTIONS 👇 ---
 
+  // 2. Get Room by ID (REQUIRED for Confirmation Page)
   getRoomById(roomId: string | number): Observable<Room> {
     return this.http.get<Room>(`${this.apiUrl}/rooms/${roomId}`);
   }
 
-  createBooking(booking: Booking): Observable<Booking> {
-    return this.http.post<Booking>(`${this.apiUrl}/bookings`, booking);
-  }
-
+  // 3. Get Booking by ID (REQUIRED for Confirmation Page)
   getBookingById(id: number): Observable<Booking> {
     return this.http.get<Booking>(`${this.apiUrl}/bookings/${id}`);
+  }
+
+  // 4. Create Booking
+  createBooking(booking: Booking): Observable<Booking> {
+    return this.http.post<Booking>(`${this.apiUrl}/bookings`, booking);
   }
 }

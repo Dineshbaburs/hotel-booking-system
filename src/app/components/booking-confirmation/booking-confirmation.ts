@@ -19,9 +19,9 @@ export class BookingConfirmationComponent implements OnInit {
   booking: Booking | undefined;
   room: Room | undefined;
   hotel: Hotel | undefined;
-  isLoading = true;
   
-  // NEW: Variable to hold the random room number
+  isLoading = true;
+  errorMessage = ''; // New variable for error messages
   assignedRoomNumber: number = 0;
 
   constructor(
@@ -31,23 +31,42 @@ export class BookingConfirmationComponent implements OnInit {
 
   ngOnInit(): void {
     const bookingId = Number(this.route.snapshot.paramMap.get('id'));
-
-    // GENERATE RANDOM ROOM NUMBER (Between 101 and 599)
     this.assignedRoomNumber = Math.floor(Math.random() * 500) + 100;
 
     if (bookingId) {
-      this.hotelService.getBookingById(bookingId).subscribe(bookingData => {
-        this.booking = bookingData;
+      // 1. Get Booking (With Error Handling)
+      this.hotelService.getBookingById(bookingId).subscribe({
+        next: (bookingData) => {
+          this.booking = bookingData;
 
-        this.hotelService.getRoomById(bookingData.roomId).subscribe(roomData => {
-          this.room = roomData;
+          // 2. Get Room
+          this.hotelService.getRoomById(bookingData.roomId).subscribe({
+            next: (roomData) => {
+              this.room = roomData;
 
-          this.hotelService.getHotelById(roomData.hotelId).subscribe(hotelData => {
-            this.hotel = hotelData;
-            this.isLoading = false;
+              // 3. Get Hotel
+              this.hotelService.getHotelById(roomData.hotelId).subscribe({
+                next: (hotelData) => {
+                  this.hotel = hotelData;
+                  this.isLoading = false; // SUCCESS: Stop loading
+                },
+                error: (err) => this.handleError('Could not find hotel details.', err)
+              });
+            },
+            error: (err) => this.handleError('Could not find room details.', err)
           });
-        });
+        },
+        error: (err) => this.handleError('Booking not found. Please try again.', err)
       });
+    } else {
+      this.handleError('Invalid Booking ID.', null);
     }
+  }
+
+  // Helper to handle errors safely
+  private handleError(message: string, error: any) {
+    console.error(error);
+    this.errorMessage = message;
+    this.isLoading = false; // STOP LOADING even if there is an error
   }
 }

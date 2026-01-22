@@ -4,7 +4,13 @@
     <h2>Generating Receipt...</h2>
   </div>
 
-  <mat-card *ngIf="!isLoading && booking && hotel" class="receipt-card">
+  <div *ngIf="errorMessage" class="error-message">
+    <h2 style="color: red;">Error</h2>
+    <p>{{ errorMessage }}</p>
+    <button mat-raised-button color="primary" routerLink="/">Return Home</button>
+  </div>
+
+  <mat-card *ngIf="!isLoading && !errorMessage && booking && hotel" class="receipt-card">
     <div class="success-header">
       <h1>Booking Confirmed!</h1>
       <p>Thank you for choosing {{ hotel.name }}</p>
