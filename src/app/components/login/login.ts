@@ -31,7 +31,8 @@ export class LoginComponent {
       const { email, password } = this.loginForm.value;
       this.authService.login(email, password).subscribe(user => {
         if (user) {
-          this.router.navigate(['/']); // Go to Home on success
+          // SUCCESS: Go to Home Page (NOT Login page)
+          this.router.navigate(['/home']); 
         } else {
           this.errorMessage = 'Invalid email or password';
         }

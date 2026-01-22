@@ -1,8 +1,8 @@
 <mat-toolbar color="primary">
-  <span routerLink="/">JDP Hotels</span>
+  <span routerLink="/home" style="cursor: pointer;">JDP Hotels</span>
   <span class="spacer"></span>
 
-  <button mat-button routerLink="/">Home</button>
+  <button mat-button routerLink="/home">Home</button>
   <button mat-button routerLink="/hotels">Hotels</button>
 
   <ng-container *ngIf="currentUser">
@@ -11,7 +11,7 @@
   </ng-container>
 
   <ng-container *ngIf="!currentUser">
-    <button mat-button routerLink="/login">Login</button>
+    <button mat-button routerLink="/">Login</button>
     <button mat-raised-button color="accent" routerLink="/register">Sign Up</button>
   </ng-container>
 </mat-toolbar>
