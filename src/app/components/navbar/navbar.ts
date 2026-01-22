@@ -4,12 +4,12 @@ import { RouterModule } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { AuthService } from '../../services/auth.service'; // <--- Now this will work!
-import { User } from '../../models/user.model'; // <--- This too!
+import { AuthService } from '../../services/auth.service';
+import { User } from '../../models/user.model';
 
 @Component({
   selector: 'app-navbar',
-  standalone: true, // <--- CRITICAL
+  standalone: true, // <--- THIS WAS MISSING
   imports: [
     CommonModule, 
     RouterModule, 
