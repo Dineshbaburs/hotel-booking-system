@@ -1,7 +1,6 @@
 export interface User {
-  id: number;
-  username: string;
+  id: string;
+  name: string;
   email: string;
-  password?: string;
-  role: 'admin' | 'customer';
+  password?: string; // Optional because we might hide it in frontend
 }

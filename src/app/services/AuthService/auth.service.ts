@@ -11,12 +11,12 @@ import { Router } from '@angular/router';
 export class AuthService {
   private apiUrl = 'http://localhost:3000/users';
   
-  // Holds the current user state (LoggedIn or null)
+  // Holds the current user state
   private currentUserSubject = new BehaviorSubject<User | null>(null);
   public currentUser$ = this.currentUserSubject.asObservable();
 
   constructor(private http: HttpClient, private router: Router) {
-    // Check if user is already logged in (from localStorage)
+    // Check if user is logged in (from localStorage)
     const storedUser = localStorage.getItem('currentUser');
     if (storedUser) {
       this.currentUserSubject.next(JSON.parse(storedUser));
@@ -34,7 +34,7 @@ export class AuthService {
       .pipe(map(users => {
         if (users.length > 0) {
           const user = users[0];
-          // Save to LocalStorage so they stay logged in on refresh
+          // Save session
           localStorage.setItem('currentUser', JSON.stringify(user));
           this.currentUserSubject.next(user);
           return user;
@@ -50,7 +50,7 @@ export class AuthService {
     this.router.navigate(['/login']);
   }
 
-  // Helper to get current value
+  // Helper
   getCurrentUserValue(): User | null {
     return this.currentUserSubject.value;
   }
