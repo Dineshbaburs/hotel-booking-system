@@ -7,11 +7,21 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon'; // <--- 1. Import This
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, RouterModule, MatCardModule, MatFormFieldModule, MatInputModule, MatButtonModule],
+  imports: [
+    CommonModule, 
+    ReactiveFormsModule, 
+    RouterModule, 
+    MatCardModule, 
+    MatFormFieldModule, 
+    MatInputModule, 
+    MatButtonModule,
+    MatIconModule // <--- 2. Add This to Imports Array
+  ],
   templateUrl: './login.html',
   styleUrl: './login.css'
 })
@@ -31,7 +41,7 @@ export class LoginComponent {
       const { email, password } = this.loginForm.value;
       this.authService.login(email, password).subscribe(user => {
         if (user) {
-          // SUCCESS: Go to Home Page (NOT Login page)
+          // Success: Go to Home
           this.router.navigate(['/home']); 
         } else {
           this.errorMessage = 'Invalid email or password';
