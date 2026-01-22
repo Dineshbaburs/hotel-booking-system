@@ -17,10 +17,20 @@
       <div class="description-section">
         <h2>About</h2>
         <p>{{ hotel.description }}</p>
+        
+        <div style="margin-top: 20px;">
+             <h3>Amenities</h3>
+             <mat-chip-set>
+                <mat-chip *ngFor="let amenity of hotel.amenities">{{ amenity }}</mat-chip>
+             </mat-chip-set>
+        </div>
       </div>
 
       <div class="rooms-section">
         <h2>Select a Room</h2>
+        
+        <p *ngIf="rooms.length === 0">No rooms available for online booking.</p>
+
         <div class="room-list">
           <mat-card class="room-card" *ngFor="let room of rooms">
             <mat-card-header>
@@ -28,6 +38,9 @@
               <mat-card-subtitle>Guests: {{ room.maxGuests }}</mat-card-subtitle>
             </mat-card-header>
             <mat-card-content>
+              <ul style="padding-left: 20px; color: #666;">
+                 <li *ngFor="let feature of room.features">{{ feature }}</li>
+              </ul>
               <p class="price">{{ room.price | currency:'INR' }} / night</p>
             </mat-card-content>
             <mat-card-actions align="end">

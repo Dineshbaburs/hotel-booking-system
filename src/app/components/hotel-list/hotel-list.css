@@ -10,16 +10,18 @@ h1 {
   color: #333;
 }
 
+/* Grid that keeps cards aligned */
 .hotel-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
 }
 
+/* Card Structure */
 .hotel-card {
   display: flex;
   flex-direction: column;
-  height: 100%; /* Ensures equal height */
+  height: 100%; /* Forces equal height */
   transition: transform 0.2s;
 }
 
@@ -28,14 +30,16 @@ h1 {
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
+/* Uniform Image Size */
 .hotel-card img {
   height: 200px;
   width: 100%;
   object-fit: cover;
 }
 
+/* Pushes button to bottom */
 mat-card-content {
-  flex-grow: 1; /* Pushes button to bottom */
+  flex-grow: 1; 
   padding-top: 10px;
 }
 
@@ -58,6 +62,7 @@ mat-card-content {
 .price { color: #2e7d32; }
 .rating { color: #fbc02d; }
 
+/* Right-aligns the button */
 mat-card-actions {
   display: flex;
   justify-content: flex-end;

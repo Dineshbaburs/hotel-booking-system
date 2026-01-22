@@ -440,7 +440,7 @@
       "id": "101",
       "hotelId": 1,
       "roomNumber": "101",
-      "type": "Deluxe",
+      "type": "Deluxe Room",
       "price": 4500,
       "isAvailable": true,
       "maxGuests": 2,
@@ -450,9 +450,126 @@
       ]
     },
     {
+      "id": "102",
+      "hotelId": 1,
+      "roomNumber": "102",
+      "type": "Standard Room",
+      "price": 3000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
       "id": "201",
-      "hotelId": 6,
+      "hotelId": 2,
       "roomNumber": "201",
+      "type": "Deluxe Room",
+      "price": 2500,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "King Bed",
+        "Work Desk"
+      ]
+    },
+    {
+      "id": "202",
+      "hotelId": 2,
+      "roomNumber": "202",
+      "type": "Standard Room",
+      "price": 1800,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "301",
+      "hotelId": 3,
+      "roomNumber": "301",
+      "type": "Suite",
+      "price": 6000,
+      "isAvailable": true,
+      "maxGuests": 4,
+      "features": [
+        "King Bed",
+        "Balcony"
+      ]
+    },
+    {
+      "id": "302",
+      "hotelId": 3,
+      "roomNumber": "302",
+      "type": "Deluxe Room",
+      "price": 4000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "Pool View"
+      ]
+    },
+    {
+      "id": "401",
+      "hotelId": 4,
+      "roomNumber": "401",
+      "type": "Cottage",
+      "price": 3500,
+      "isAvailable": true,
+      "maxGuests": 3,
+      "features": [
+        "Garden View",
+        "Private Sitout"
+      ]
+    },
+    {
+      "id": "402",
+      "hotelId": 4,
+      "roomNumber": "402",
+      "type": "Standard Room",
+      "price": 2500,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "501",
+      "hotelId": 5,
+      "roomNumber": "501",
+      "type": "Executive Room",
+      "price": 4200,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "King Bed",
+        "Office Desk"
+      ]
+    },
+    {
+      "id": "502",
+      "hotelId": 5,
+      "roomNumber": "502",
+      "type": "Standard Room",
+      "price": 3000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "601",
+      "hotelId": 6,
+      "roomNumber": "601",
       "type": "Sea View Suite",
       "price": 8500,
       "isAvailable": true,
@@ -463,16 +580,640 @@
       ]
     },
     {
-      "id": "301",
-      "hotelId": 26,
-      "roomNumber": "305",
-      "type": "Standard",
+      "id": "602",
+      "hotelId": 6,
+      "roomNumber": "602",
+      "type": "Deluxe Room",
+      "price": 6000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "King Bed",
+        "City View"
+      ]
+    },
+    {
+      "id": "701",
+      "hotelId": 7,
+      "roomNumber": "701",
+      "type": "Beachfront Room",
+      "price": 6500,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Direct Beach Access",
+        "Balcony"
+      ]
+    },
+    {
+      "id": "702",
+      "hotelId": 7,
+      "roomNumber": "702",
+      "type": "Standard Room",
+      "price": 4500,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "801",
+      "hotelId": 8,
+      "roomNumber": "801",
+      "type": "Luxury Suite",
+      "price": 5000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "King Bed",
+        "Mini Bar"
+      ]
+    },
+    {
+      "id": "802",
+      "hotelId": 8,
+      "roomNumber": "802",
+      "type": "Standard Room",
+      "price": 3500,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "901",
+      "hotelId": 9,
+      "roomNumber": "901",
+      "type": "Business Room",
+      "price": 3200,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "King Bed",
+        "Work Desk"
+      ]
+    },
+    {
+      "id": "902",
+      "hotelId": 9,
+      "roomNumber": "902",
+      "type": "Standard Room",
+      "price": 2200,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "1001",
+      "hotelId": 10,
+      "roomNumber": "1001",
+      "type": "Heritage Suite",
+      "price": 4800,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Colonial Decor",
+        "Bathtub"
+      ]
+    },
+    {
+      "id": "1002",
+      "hotelId": 10,
+      "roomNumber": "1002",
+      "type": "Standard Room",
+      "price": 3000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "1101",
+      "hotelId": 11,
+      "roomNumber": "1101",
+      "type": "Royal Suite",
+      "price": 4000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "King Bed",
+        "City View"
+      ]
+    },
+    {
+      "id": "1102",
+      "hotelId": 11,
+      "roomNumber": "1102",
+      "type": "Standard Room",
+      "price": 2500,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "1201",
+      "hotelId": 12,
+      "roomNumber": "1201",
+      "type": "Boutique Room",
+      "price": 3500,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Art Decor",
+        "Balcony"
+      ]
+    },
+    {
+      "id": "1202",
+      "hotelId": 12,
+      "roomNumber": "1202",
+      "type": "Standard Room",
+      "price": 2500,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "1301",
+      "hotelId": 13,
+      "roomNumber": "1301",
+      "type": "Deluxe Room",
+      "price": 2000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "King Bed",
+        "TV"
+      ]
+    },
+    {
+      "id": "1302",
+      "hotelId": 13,
+      "roomNumber": "1302",
+      "type": "Standard Room",
+      "price": 1200,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "1401",
+      "hotelId": 14,
+      "roomNumber": "1401",
+      "type": "Transit Suite",
+      "price": 5500,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Soundproof",
+        "King Bed"
+      ]
+    },
+    {
+      "id": "1402",
+      "hotelId": 14,
+      "roomNumber": "1402",
+      "type": "Standard Room",
+      "price": 3500,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "1501",
+      "hotelId": 15,
+      "roomNumber": "1501",
+      "type": "Haveli Suite",
+      "price": 3000,
+      "isAvailable": true,
+      "maxGuests": 3,
+      "features": [
+        "Traditional Decor",
+        "Courtyard View"
+      ]
+    },
+    {
+      "id": "1502",
+      "hotelId": 15,
+      "roomNumber": "1502",
+      "type": "Standard Room",
+      "price": 1800,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "1601",
+      "hotelId": 16,
+      "roomNumber": "1601",
+      "type": "Beach Cottage",
+      "price": 5000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Sea View",
+        "Private Porch"
+      ]
+    },
+    {
+      "id": "1602",
+      "hotelId": 16,
+      "roomNumber": "1602",
+      "type": "Standard Room",
+      "price": 3000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "1701",
+      "hotelId": 17,
+      "roomNumber": "1701",
+      "type": "City View Room",
+      "price": 3000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "King Bed",
+        "Balcony"
+      ]
+    },
+    {
+      "id": "1702",
+      "hotelId": 17,
+      "roomNumber": "1702",
+      "type": "Standard Room",
+      "price": 2000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "1801",
+      "hotelId": 18,
+      "roomNumber": "1801",
+      "type": "Luxury Hut",
+      "price": 6000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Beachfront",
+        "Hammock"
+      ]
+    },
+    {
+      "id": "1802",
+      "hotelId": 18,
+      "roomNumber": "1802",
+      "type": "Standard Room",
       "price": 4000,
       "isAvailable": true,
       "maxGuests": 2,
       "features": [
         "Queen Bed",
-        "Free WiFi"
+        "Garden View"
+      ]
+    },
+    {
+      "id": "1901",
+      "hotelId": 19,
+      "roomNumber": "1901",
+      "type": "Party Suite",
+      "price": 1500,
+      "isAvailable": true,
+      "maxGuests": 4,
+      "features": [
+        "Bunk Beds",
+        "Lockers"
+      ]
+    },
+    {
+      "id": "1902",
+      "hotelId": 19,
+      "roomNumber": "1902",
+      "type": "Standard Room",
+      "price": 1000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "2001",
+      "hotelId": 20,
+      "roomNumber": "2001",
+      "type": "Cliff View Suite",
+      "price": 7500,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Panoramic View",
+        "Jacuzzi"
+      ]
+    },
+    {
+      "id": "2002",
+      "hotelId": 20,
+      "roomNumber": "2002",
+      "type": "Deluxe Room",
+      "price": 5000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "King Bed",
+        "Balcony"
+      ]
+    },
+    {
+      "id": "2101",
+      "hotelId": 21,
+      "roomNumber": "2101",
+      "type": "Royal Suite",
+      "price": 9000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "King Bed",
+        "Bathtub"
+      ]
+    },
+    {
+      "id": "2102",
+      "hotelId": 21,
+      "roomNumber": "2102",
+      "type": "Standard Room",
+      "price": 6000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "2201",
+      "hotelId": 22,
+      "roomNumber": "2201",
+      "type": "Sea Facing Room",
+      "price": 2500,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Ocean View",
+        "Balcony"
+      ]
+    },
+    {
+      "id": "2202",
+      "hotelId": 22,
+      "roomNumber": "2202",
+      "type": "Standard Room",
+      "price": 1500,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "2301",
+      "hotelId": 23,
+      "roomNumber": "2301",
+      "type": "Deluxe Room",
+      "price": 3000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "King Bed",
+        "City View"
+      ]
+    },
+    {
+      "id": "2302",
+      "hotelId": 23,
+      "roomNumber": "2302",
+      "type": "Standard Room",
+      "price": 2000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "2401",
+      "hotelId": 24,
+      "roomNumber": "2401",
+      "type": "Beach Villa",
+      "price": 5500,
+      "isAvailable": true,
+      "maxGuests": 4,
+      "features": [
+        "Private Pool",
+        "2 Bedrooms"
+      ]
+    },
+    {
+      "id": "2402",
+      "hotelId": 24,
+      "roomNumber": "2402",
+      "type": "Standard Room",
+      "price": 3500,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "Garden View"
+      ]
+    },
+    {
+      "id": "2501",
+      "hotelId": 25,
+      "roomNumber": "2501",
+      "type": "Business Suite",
+      "price": 3800,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "King Bed",
+        "Work Station"
+      ]
+    },
+    {
+      "id": "2502",
+      "hotelId": 25,
+      "roomNumber": "2502",
+      "type": "Standard Room",
+      "price": 2500,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "2601",
+      "hotelId": 26,
+      "roomNumber": "2601",
+      "type": "Grand Suite",
+      "price": 4000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "King Bed",
+        "Bathtub"
+      ]
+    },
+    {
+      "id": "2602",
+      "hotelId": 26,
+      "roomNumber": "2602",
+      "type": "Standard Room",
+      "price": 2500,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "2701",
+      "hotelId": 27,
+      "roomNumber": "2701",
+      "type": "Hill View Room",
+      "price": 3000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Mountain View",
+        "Balcony"
+      ]
+    },
+    {
+      "id": "2702",
+      "hotelId": 27,
+      "roomNumber": "2702",
+      "type": "Standard Room",
+      "price": 2000,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "2801",
+      "hotelId": 28,
+      "roomNumber": "2801",
+      "type": "Deluxe Room",
+      "price": 1500,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "King Bed",
+        "TV"
+      ]
+    },
+    {
+      "id": "2802",
+      "hotelId": 28,
+      "roomNumber": "2802",
+      "type": "Standard Room",
+      "price": 900,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "2901",
+      "hotelId": 29,
+      "roomNumber": "2901",
+      "type": "Executive Suite",
+      "price": 2800,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "King Bed",
+        "Work Desk"
+      ]
+    },
+    {
+      "id": "2902",
+      "hotelId": 29,
+      "roomNumber": "2902",
+      "type": "Standard Room",
+      "price": 1800,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
+      ]
+    },
+    {
+      "id": "3001",
+      "hotelId": 30,
+      "roomNumber": "3001",
+      "type": "Deluxe Room",
+      "price": 2200,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "King Bed",
+        "Highway View"
+      ]
+    },
+    {
+      "id": "3002",
+      "hotelId": 30,
+      "roomNumber": "3002",
+      "type": "Standard Room",
+      "price": 1500,
+      "isAvailable": true,
+      "maxGuests": 2,
+      "features": [
+        "Queen Bed",
+        "WiFi"
       ]
     }
   ],
@@ -544,6 +1285,26 @@
       "email": "dfzxgchvb@gmail.com",
       "checkInDate": "2026-01-13",
       "checkOutDate": "2026-01-05",
+      "totalPrice": 0,
+      "status": "confirmed"
+    },
+    {
+      "id": "062f",
+      "roomId": 301,
+      "guestName": "diensjb",
+      "email": "sdgdtufq@gmail.com",
+      "checkInDate": "2025-12-30",
+      "checkOutDate": "2026-01-05",
+      "totalPrice": 0,
+      "status": "confirmed"
+    },
+    {
+      "id": "96c3",
+      "roomId": 2002,
+      "guestName": "dinesh",
+      "email": "dinesh@gmail.com",
+      "checkInDate": "2026-01-02",
+      "checkOutDate": "2026-01-16",
       "totalPrice": 0,
       "status": "confirmed"
     }

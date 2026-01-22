@@ -25,7 +25,7 @@ import { FormsModule } from '@angular/forms';
 export class HomeComponent {
   selectedLocation: string = '';
   
-  // UPDATED: Strict list of Indian Cities
+  // List of Cities (Matches your Requirement)
   locations: string[] = ['Bengaluru', 'Mumbai', 'Delhi', 'Goa', 'Chennai', 'Salem'];
 
   constructor(private router: Router) {}
