@@ -36,15 +36,13 @@ export class HotelService {
     return this.http.get<Room[]>(`${this.apiUrl}/rooms?hotelId=${hotelId}`);
   }
 
-  // --- 👇 THESE ARE THE MISSING FUNCTIONS 👇 ---
-
-  // 2. Get Room by ID (REQUIRED for Confirmation Page)
+  // 2. Get Room by ID
   getRoomById(roomId: string | number): Observable<Room> {
     return this.http.get<Room>(`${this.apiUrl}/rooms/${roomId}`);
   }
 
-  // 3. Get Booking by ID (REQUIRED for Confirmation Page)
-  getBookingById(id: number): Observable<Booking> {
+  // 👇 FIXED: Changed 'number' to 'string | number' to allow "a1b2" style IDs
+  getBookingById(id: string | number): Observable<Booking> {
     return this.http.get<Booking>(`${this.apiUrl}/bookings/${id}`);
   }
 
@@ -52,8 +50,9 @@ export class HotelService {
   createBooking(booking: Booking): Observable<Booking> {
     return this.http.post<Booking>(`${this.apiUrl}/bookings`, booking);
   }
-  // Add this method to your HotelService class
-getBookingsByEmail(email: string): Observable<Booking[]> {
-  return this.http.get<Booking[]>(`${this.apiUrl}/bookings?email=${email}`);
-}
+
+  // 5. Get Bookings by Email (For My Bookings Page)
+  getBookingsByEmail(email: string): Observable<Booking[]> {
+    return this.http.get<Booking[]>(`${this.apiUrl}/bookings?email=${email}`);
+  }
 }

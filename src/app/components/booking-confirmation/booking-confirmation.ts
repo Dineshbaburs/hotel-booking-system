@@ -21,7 +21,7 @@ export class BookingConfirmationComponent implements OnInit {
   hotel: Hotel | undefined;
   
   isLoading = true;
-  errorMessage = ''; // New variable for error messages
+  errorMessage = '';
   assignedRoomNumber: number = 0;
 
   constructor(
@@ -30,25 +30,24 @@ export class BookingConfirmationComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const bookingId = Number(this.route.snapshot.paramMap.get('id'));
+    // 👇 FIXED: Removed Number() so it handles string IDs like "a1b2"
+    const bookingId = this.route.snapshot.paramMap.get('id');
+    
     this.assignedRoomNumber = Math.floor(Math.random() * 500) + 100;
 
     if (bookingId) {
-      // 1. Get Booking (With Error Handling)
       this.hotelService.getBookingById(bookingId).subscribe({
         next: (bookingData) => {
           this.booking = bookingData;
 
-          // 2. Get Room
           this.hotelService.getRoomById(bookingData.roomId).subscribe({
             next: (roomData) => {
               this.room = roomData;
 
-              // 3. Get Hotel
               this.hotelService.getHotelById(roomData.hotelId).subscribe({
                 next: (hotelData) => {
                   this.hotel = hotelData;
-                  this.isLoading = false; // SUCCESS: Stop loading
+                  this.isLoading = false;
                 },
                 error: (err) => this.handleError('Could not find hotel details.', err)
               });
@@ -63,10 +62,9 @@ export class BookingConfirmationComponent implements OnInit {
     }
   }
 
-  // Helper to handle errors safely
   private handleError(message: string, error: any) {
     console.error(error);
     this.errorMessage = message;
-    this.isLoading = false; // STOP LOADING even if there is an error
+    this.isLoading = false;
   }
 }

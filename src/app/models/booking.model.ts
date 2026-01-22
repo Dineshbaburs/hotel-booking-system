@@ -1,5 +1,5 @@
 export interface Booking {
-  id?: number; // Optional because DB creates it
+  id?: string | number; // <--- CHANGED: Allow string IDs
   roomId: number;
   guestName: string;
   email: string;
