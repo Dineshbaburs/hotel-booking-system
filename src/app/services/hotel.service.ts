@@ -52,4 +52,8 @@ export class HotelService {
   createBooking(booking: Booking): Observable<Booking> {
     return this.http.post<Booking>(`${this.apiUrl}/bookings`, booking);
   }
+  // Add this method to your HotelService class
+getBookingsByEmail(email: string): Observable<Booking[]> {
+  return this.http.get<Booking[]>(`${this.apiUrl}/bookings?email=${email}`);
+}
 }

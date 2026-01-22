@@ -7,19 +7,21 @@ import { BookingConfirmationComponent } from './components/booking-confirmation/
 import { LoginComponent } from './components/login/login';
 import { RegisterComponent } from './components/register/register';
 import { MyBookingsComponent } from './components/my-bookings/my-bookings';
+import { authGuard } from './guards/auth.guard'; // <--- Import Guard
 
 export const routes: Routes = [
-  // 1. DEFAULT IS NOW LOGIN
-  { path: '', component: LoginComponent },
-  
-  // 2. MOVED HOME TO '/home'
-  { path: 'home', component: HomeComponent },
-  
-  { path: 'hotels', component: HotelListComponent },
-  { path: 'hotels/:id', component: HotelDetailComponent },
-  { path: 'book/:roomId', component: BookingFormComponent },
-  { path: 'confirmation/:id', component: BookingConfirmationComponent },
-  { path: 'login', redirectTo: '', pathMatch: 'full' }, // specific /login redirects to root
+  // 1. Public Routes (No Guard)
+  { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'my-bookings', component: MyBookingsComponent }
+  
+  // 2. Default Redirect
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+
+  // 3. Protected Routes (Locked by authGuard)
+  { path: 'home', component: HomeComponent, canActivate: [authGuard] },
+  { path: 'hotels', component: HotelListComponent, canActivate: [authGuard] },
+  { path: 'hotels/:id', component: HotelDetailComponent, canActivate: [authGuard] },
+  { path: 'book/:roomId', component: BookingFormComponent, canActivate: [authGuard] },
+  { path: 'confirmation/:id', component: BookingConfirmationComponent, canActivate: [authGuard] },
+  { path: 'my-bookings', component: MyBookingsComponent, canActivate: [authGuard] }
 ];
