@@ -26,7 +26,7 @@ export class HomeComponent {
   selectedLocation: string = '';
   
   // List of Cities (Matches your Requirement)
-  locations: string[] = ['Bengaluru', 'Mumbai', 'Delhi', 'Goa', 'Chennai', 'Salem'];
+  locations: string[] = ['Bengaluru', 'Mumbai',  'Goa'];
 
   constructor(private router: Router) {}
 
