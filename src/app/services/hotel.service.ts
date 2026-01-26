@@ -10,7 +10,8 @@ import { Booking } from '../models/booking.model';
   providedIn: 'root'
 })
 export class HotelService {
-  private apiUrl = 'http://localhost:3000';
+  // ✅ UPDATED: Points to Online Database
+  private apiUrl = 'https://my-json-server.typicode.com/dineshbaburs/hotel-db';
 
   constructor(private http: HttpClient) {}
 
@@ -41,7 +42,7 @@ export class HotelService {
     return this.http.get<Room>(`${this.apiUrl}/rooms/${roomId}`);
   }
 
-  // 👇 FIXED: Changed 'number' to 'string | number' to allow "a1b2" style IDs
+  // 3. Get Booking by ID
   getBookingById(id: string | number): Observable<Booking> {
     return this.http.get<Booking>(`${this.apiUrl}/bookings/${id}`);
   }
@@ -51,7 +52,7 @@ export class HotelService {
     return this.http.post<Booking>(`${this.apiUrl}/bookings`, booking);
   }
 
-  // 5. Get Bookings by Email (For My Bookings Page)
+  // 5. Get Bookings by Email
   getBookingsByEmail(email: string): Observable<Booking[]> {
     return this.http.get<Booking[]>(`${this.apiUrl}/bookings?email=${email}`);
   }
