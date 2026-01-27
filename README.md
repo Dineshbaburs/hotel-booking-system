@@ -1,4 +1,4 @@
-# HotelBookingSystem
+# Hotel Booking and Room Management System
 Project Site Demo: https://dineshbaburs.github.io/hotel-booking-system/
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
